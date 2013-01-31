@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>智能网站优化算法之禁忌搜索算法 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            禁忌搜索算法因在后文中将使用禁忌搜索作为求解算法，为此首先对此算法作一概述。禁忌搜索(TabuSearch;TS)是模仿...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  智能网站优化算法之禁忌搜索算法				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							智能网站优化算法之禁忌搜索算法						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:51:51 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	<div>	&nbsp;&nbsp;&nbsp;&nbsp;禁忌搜索算法<br />	&nbsp;&nbsp;&nbsp;&nbsp;因在后文中将使用禁忌搜索作为求解算法，为此首先对此算法作一概述。禁忌搜索(Tabu&nbsp;Search;TS)是模仿人类记忆功能，根据避免犯重复性错误的特点设计出来的一生<a href="http://www.30ie.com/nettui">智能优化算法</a>。它是20世纪80年代由Glover等等人针对组合优化问题提出的（Glover&nbsp;1989，1990，1998;&nbsp;Glover&nbsp;etd&nbsp;1993），随后在调度、优化等领域取得了广泛应用（Armentano&nbsp;and&nbsp;Suich&nbsp;2000,Annen～and&nbsp;Yamashita&nbsp;2OOO;Ben-Daya&nbsp;and&nbsp;Al-Fawzan&nbsp;1998;Chelouah&nbsp;and&nbsp;Siarry&nbsp;2000:&nbsp;Landr/eu&nbsp;etd&nbsp;2001)。<br />	&nbsp;&nbsp;&nbsp;&nbsp;TS定义了邻域空间的概念：当前解x的邻域空间N(x)是指从当前解出发的所有可行移动s(x)产生的解的集合。<br />	&nbsp;&nbsp;通过一系列移动，TS可以从解空间中的某个解移向邻域中的最优解，并试图找到全局最优解。TS记录曾经找到的最好解作为算法求得的最优解。禁忌表防止了这种&ldquo;移动&rdquo;陷入循环和局优。<br />	&nbsp;&nbsp;&nbsp;&nbsp;首先对解空间x中的每一个解s定义它的郐域N(s)，禁忌搜索作从一个解到邻域中另一个解的重复移动。显然，如果不加限制，这样的移动非常可能形成循环。为了防止TS陷入局部最优点，有必要在，f（s&rsquo;)&gt;f(s)时也移向邻域点s&rsquo;（以极小化目标为例）。因此TS引入了一个循环表&mdash;&mdash;禁忌表T。此表采用&ldquo;先进先出&rdquo;的结构，其中记录了搜索过程中最近T次的移动。当执行一个移动时，新的移动社记录到T表的顶部，同时最底部的移动被取消。<br />	&nbsp;&nbsp;&nbsp;&nbsp;当某移动被包含在T表中时，此移动处于&ldquo;禁忌&rdquo;状态。在某些条件下，可能需要解除被&ldquo;禁忌&rdquo;的移动，由此引入了吸收水平函数A(z)的概念：如果f(s&rsquo;)&lt;A[f(s)]，则从s&rsquo;到s的禁忌移动是合法的。这里的吸收水甲一般定义为历史上的最好解。禁忌搜索的停止准则一般是某个最大的迭代次数，或者是经过一定的迭代次数后当前解仍没有得到改善。<br />	&nbsp;&nbsp;&nbsp;&nbsp;下面分别介绍上述概念：<br />	&nbsp;&nbsp;&nbsp;&nbsp;(1)邻域移动<br />	&nbsp;&nbsp;&nbsp;&nbsp;邻域移动是从当前解产生新解的途径，可以针对问题特点采用不同的定义方法。领域移动前后的目标函数值之差称为移动值，若移动值为负，则称此移动为改进移动；否则称作非改进移动。最好的移动可能是改进移动，也可能是非改进移动，这使禁忌搜索算法具有跳出局优的能力。<br />	&nbsp;&nbsp;(2)选择策略<br />	&nbsp;&nbsp;选择策略即择优规则，一个好的选择策略应既能保证解的质量又保证计算速度。当前应用最广泛的选择策略是最好解优先策略(Best&nbsp;Improved&nbsp;Strategy)和第一改进解优先策略(First&nbsp;Imp,o.ed&nbsp;St.ategy)。最好解优先策略就是从当前邻域中选择导致最小目标值的移动产生的解，并作为下一次选代的开始。第一改进解优先荒略是从邻域中选择第一个可以改进当前解的移动产生的解，并作为下一次迭代的开始。最好解优先策略相当于搜索最陡的下降，效果较好但需更多的计算时间。第一改进解优先策略无需搜索整个邻域，所以所花计算时间较少，适合于较大的邻域。<br />	&nbsp;&nbsp;(3)禁忌表<br />	&nbsp;&nbsp;禁忌表是禁忌搜索的核心，主要目的足阻止搜索过程中出现循环或陷入局部最优。它通常记录此前的若干次移动，井禁止这些移动在近期内返回。在迭代固定次数后，禁忌表释放这些移动，重新参加运算。禁忌表的长度在很大程度上影响着搜索速度和解的质量禁忌表的长度太短，搜索容易陷入死循环；禁忌表太长时，搜索容易跳过最优解。因此适当的禁忌表长度应该是尽可能小同时义能避免算法进入循环。由于禁忌表的这种特性类似于人的&ldquo;短期记忆&rdquo;，因而禁忌表义称短期记忆函数。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(4)吸收水平函数<br />	&nbsp;&nbsp;&nbsp;&nbsp;为防止由于某些移动被禁止而使搜索跳过好的解，TS算法引A了吸收水平函数，亦称为破禁水平。在某移动对应邻域解的目标值超过一定的破禁水平时，即使此移动在禁忌表中，仍可向这一邻域进行移动。吸收水平函数的设置因根据问题而异，它可以是一组判断依据，若其中任一条件i满足，即有ai(s，x)&nbsp;&lt;Ai(s，x)，则邻域s的禁忌状态可被取消。其中ai(&middot;)是吸收水平函数，Ai(&middot;)是阈值。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(5)长期表<br />	&nbsp;&nbsp;&nbsp;&nbsp;短期记忆用来避免重复进行相同的移动，但是它并不能把搜索带到新的搜索区域，因此在实际应用中短期表经常与长期表结合使用，以保持局部搜索与全局搜索之间的平衡。通过使用长期表，相当于每次搜索都从不同且相距较远的初始状态出发，这样各次搜索的过程便不会互相重复。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(6)停止规则<br />	&nbsp;&nbsp;&nbsp;&nbsp;TS算法常用的停止规则有两种。一种是把最大选代次<br />	&nbsp;&nbsp;&nbsp;&nbsp;数作为停止算法的标准；另一种是在给定数目的选代次数内<br />	&nbsp;&nbsp;&nbsp;&nbsp;得到的最好解没有改进时算法终止。</div><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-859-1.html">智能化网站建设的技术方法</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-861-1.html">老生常谈之网站的基本概念</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('智能网站优化算法之禁忌搜索算法')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('智能网站优化算法之禁忌搜索算法')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('智能网站优化算法之禁忌搜索算法')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('智能网站优化算法之禁忌搜索算法')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('智能网站优化算法之禁忌搜索算法');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=860&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=860&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

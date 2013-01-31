@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>服务器数据备份与容错 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            数据备份与容错(1)必要性及原因随着计算机越来越广泛地应用，人们对其依赖性也越来越强，在提高效率的同时，数据...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  服务器数据备份与容错				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							服务器数据备份与容错						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:52:21 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	<div>	&nbsp;&nbsp;&nbsp;数据备份与容错<br />	&nbsp;&nbsp;(1)必要性及原因<br />	&nbsp;&nbsp;随着计算机越来越广泛地应用，人们对其依赖性也越来越强，在提高效率的同时，数据失效问题不容忽视。一旦发生数据失效，企业就会陷入困境，用户资料、技术文件、财务账目等数据可能被破坏得面目全非，而现在企业业务越来越繁忙，几乎不可能停下来进行恢复。如果系统无法顺利恢复，最终结果将不堪设想。所以企业信息化程度越高，备份和灾难恢复措施就越重要。<br />	&nbsp;&nbsp;&nbsp;&nbsp;关于备份和灾难恢复措施的重要性有这样的统计：在我国，只有不到10%的系统采用备份措施，这意味着还有90%多的系统中的数据面临覆灭的危险。<br />	&nbsp;&nbsp;&nbsp;&nbsp;数据失效可分为两种，一种是失效后的数据彻底无法使用，这种失效称为物理损坏；另一种是失效的数据仍可以部分使用，但从整体上看，数据之间的关系是错误的，这种失效称为逻辑损坏。有时逻辑损坏比物理损坏更为严重，因为逻辑损坏不易被发现，潜伏期长，可能会因为对其错误利用而造成严重后果。<br />	&nbsp;&nbsp;&nbsp;&nbsp;常见的物理损坏有电源故障、存储设备故障、网站设备故障、传输距离过长、设备添加与移动、自然灾害、操作系统故障、数据丢失等。常见的逻辑损坏有数据不完整、数据不一致、系统数据虽然完全但不符合逻辑关系、数据错误等。<br />	&nbsp;&nbsp;对计算机系统进行全面的备份并不只是拷贝文件那么简单。完整的系统备份方案应包括备份硬件、备份软件、日常备份制度和灾难恢复措施四个部分。选择了备份硬件和软件后，还需要根据企业自身情况制定日常备份制度和灾难恢复措施，并由管理人员切实执行备份制度，否则系统安全仅仅是纸上谈兵。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(2)数据备份方法<br />	根据系统的不同要求，可以采用不同的方法进行备份，主要有滚动备份和全部备份两种。滚动备份是指在备份的时候只对最后一次备份后新增的数据进行备份，全部备份是指每次都对全部数据进行备份。<br />	&nbsp;&nbsp;&nbsp;&nbsp;两种方法各有自己的优缺点，滚动备份所需的冗余介质较少，备份时工作量也较少，适合于数据量庞大而对可用性要求不高的网站。完全备份恢复的速度快，对可用性要求高的网站最好采用这种方法．但显然这种方案会增加备份的工作量，而且需要大量的冗余存储空间，增加成本。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(3)备份需考虑的因素<br />	&nbsp;&nbsp;&nbsp;&nbsp;在进行备份时，要考虑的因素很多，最主要是对存储介质的选择，想得到良好的性能价格比并非易事，存储容量、介质种类、读取速度都是需要考虑的因素。下面分别予以介绍。<br />	&nbsp;&nbsp;&nbsp;&nbsp;①存储容量。对于需海量存储的单位，存储介质是主要的支出项目，合理的规划使用的数量就会减少成本。存储介质的容量应以能够满足需要而略有剩余为宜，在规划时要考虑到紧急情况的需要和意外的发生。<br />	&nbsp;&nbsp;②介质种类。常见的用于备份的介质主要有磁盘、磁带、MO（磁光盘）、CD-R（只读光盘）等。磁盘存储方式一般人最为熟悉，比较符合用户习惯，如果所需数据量较少，是可行的方案，但固定磁盘价格昂贵，不便于移动，也不便于保管，因而并不是最理想的。磁带存储方式经过了实践的检验．对于备份数据需要保存几十年的单位来说，这种方法是最可靠的，而且成本很低、便于携带和保管。MO的理论寿命也较长，能够重复使用，可以携带和保管，也是现在较常用的介质，但是其价格也比较昂贵，而且其使用寿命只是理论上的，还没有经过实践的检验。CD-R不可重复使用，容量和速度有限，不适合大数据量的备份。不同的单位可以按照自己的实际情况选用。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(4)容错技术<br />	&nbsp;&nbsp;容错，即系统在运行过程中，若其某个子系统发生故障，系统都将能够自动诊断出故障所在的位置和故障的性质，并且自动启动冗余或备份的于系统或部件，保证系统能够继续正常运行，自动保存或恢复文件和数据。<br />	&nbsp;&nbsp;采用容错技术的目的，是为了提高系统的安全可靠性，保证系统中的数据及文件的完整性，为用户提供完全实时和连续的高可用性计算机网络系统。<br />	&nbsp;&nbsp;&nbsp;&nbsp;容错的机制，就是为系统提供关键子系统或部件的冗余或备份资源。容错系统中的容错技术是多方面的，包括容错操作系统、容错监控与诊断系统、主服务器的磁盘镜像、窖错网络部件、磁盘冗余阵列(&nbsp;RAID)和对称多处理等，而当前最流行、最具有代表性的容错技术是冗余磁盘阵列(&nbsp;RAID)和对称多处理(SMP)两种。<br />	&nbsp;&nbsp;&nbsp;&nbsp;容错可咀通过硬件技术或软件技术实现，软件的实现也是现在最热门的网络技术之一。但纯软件的容错对系统的开销太大，现在流行的是综合软硬件的容错技术。软件监控服务器的CPU或应用并使服务器之间不断发出信号，当某服务器发生问题而使其他服务器接收不到其发出的信号时，软件的切换功能发生作用，将故障服务器的工作在指定服务器上启动起来，使服务器的工作得以继续。</div><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-917-1.html">网站的日常维护与管理</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-919-1.html">浅谈网络营销的“免费”营销模式</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('服务器数据备份与容错')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('服务器数据备份与容错')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('服务器数据备份与容错')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('服务器数据备份与容错')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('服务器数据备份与容错');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=918&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=918&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

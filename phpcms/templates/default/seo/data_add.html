@@ -1,0 +1,48 @@
+{template 'member', 'header'}
+<link href="{CSS_PATH}dialog.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{JS_PATH}dialog.js"></script>
+<script language="javascript" type="text/javascript" src="{JS_PATH}content_addtop.js"></script>
+<div id="memberArea">
+	{template 'seo', 'left'}
+	<div class="col-auto">
+		<div class="col-1 ">
+			<h5 class="title">数据同步</h5>
+			<div class="content">
+				
+			<form name="myform" action="{APP_PATH}index.php?m=seo&c=index&a=data_add" method="post" id="myform">
+			<table width="100%" cellspacing="0" class="table_form">
+			  <tr>		
+				<th width="10%">站点选择：</th>
+				   <td>
+					   <select name="info[sid]" id="website">
+							<!-- {if (count($website_category)>0)} -->
+								<option value="all">同步所有站点</option>
+								<!-- {loop $website_category $k $v} -->
+									<!-- {if $v['sid']==$_REQUEST['sid']} -->
+									<option value="{$v['sid']}" selected="selected">{$v['title']} - {$v['url']}</option>
+									<!-- {else} -->
+									<option value="{$v['sid']}">{$v['title']} - {$v['url']}</option>
+									<!-- {/if} -->
+								<!-- {/loop} -->
+							<!-- {else} -->
+								<option value="">请添加网站</option>
+							<!-- {/if} -->
+					   </select>
+				   </td>
+				 </tr>
+				 <tr>
+				   <td></td>
+				   <td colspan="2"><label>
+					 <input type="submit" name="dosubmit" id="dosubmit" value="确 定" class="button"/>
+					 </label></td>
+				 </tr>
+			   </table>
+			   </form>
+			</div>
+			
+			<span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+{template 'member', 'footer'}

@@ -1,0 +1,65 @@
+{template 'member', 'header'}
+<link href="{CSS_PATH}dialog.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{JS_PATH}dialog.js"></script>
+<script language="javascript" type="text/javascript" src="{JS_PATH}content_addtop.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+	$.formValidator.initConfig({autotip:true,formid:"myform",onerror:function(msg){}});
+	$("#website").formValidator({onshow:"请选择网站名称",onfocus:"网站名称不能为空"}).inputValidator({min:1,max:999,onerror:"网站名称不能为空"});
+	$("#keywords").formValidator({onshow:"请填写关键词,请使用回车（Enter）分开关键词，最多允许同时添加5个关键词！",onfocus:"请填写关键词，使用回车（Enter）分开关键词，最多允许同时添加5个关键词！"}).inputValidator({min:1,max:999,onerror:"关键词不能为空"});	
+	
+	//回车提交数据
+	$(document).keydown(function(event){
+	  if(event.keyCode ==13){
+		$("#dosubmit").click();
+	  }
+	});
+})
+//-->
+</script>
+<div id="memberArea">
+	{template 'seo', 'left'}
+	<div class="col-auto">
+		<div class="col-1 ">
+			<h5 class="title">添加关键词</h5>
+			<div class="content">
+				
+			<form name="myform" action="{APP_PATH}index.php?m=seo&c=index&a=keywords_add" method="post" id="myform">
+			<table width="100%" cellspacing="0" class="table_form">
+			  <tr>		
+				<th width="10%">站点选择：</th>
+				   <td>
+					   <select name="info[sid]" id="website">
+					   <option value="">请选择站点</option>
+					    <!-- {loop $website_category $k $v} -->
+							<!-- {if $v['sid']==$_REQUEST['sid']} -->
+							<option value="{$v['sid']}" selected="selected">{$v['title']} - {$v['url']}</option>
+							<!-- {else} -->
+							<option value="{$v['sid']}">{$v['title']} - {$v['url']}</option>
+							<!-- {/if} -->
+						<!-- {/loop} -->
+					   </select>
+				   </td>
+				 </tr>
+				 <tr>
+				   <th>关键词：</th>
+				   <td><textarea name="info[keywords]"  id="keywords" rows="5" cols="50" value=></textarea></td>
+				 </tr>
+				 <tr>
+				   <td></td>
+				   <td colspan="2"><label>
+					 <input type="submit" name="dosubmit" id="dosubmit" value="确 定" class="button"/>
+					 </label></td>
+				 </tr>
+			   </table>
+			   </form>
+			
+			</div>
+			
+			<span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+{template 'member', 'footer'}

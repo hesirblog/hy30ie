@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+	<meta name="keywords" content="{$SEO['keyword']}">
+	<meta name="description" content="{$SEO['description']}">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="{TEMPLETS_SKIN}/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="{TEMPLETS_SKIN}/css/case.css" rel="stylesheet" type="text/css" />
+    <script src="{TEMPLETS_SKIN}/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="{TEMPLETS_SKIN}/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+    <script src="{TEMPLETS_SKIN}/js/tab.js" language="javascript" type="text/javascript"></script>
+</head>
+{template "content","header"}
+				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="/">
+					首页
+				  </a>
+				  &gt; 成功案例
+				</div>
+				<div class="left">
+				  <div class="left_ad1">
+					<ul class="ad1_title">
+					  &gt;&gt;更多
+					</ul>
+					<div class="ad1_con">
+					  <ul class="ad1_content">
+						<li class="ad1_p">
+						  <img src="{TEMPLETS_SKIN}/images/20121012002.gif">
+						</li>
+						<li class="ad1_c">
+						  <span>
+							稳定性
+						  </span>
+						  <br>
+						  所用均为高端品牌服务
+						</li>
+					  </ul>
+					  <ul class="ad1_content">
+						<li class="ad1_p">
+						  <img src="{TEMPLETS_SKIN}/images/20121012003.gif">
+						</li>
+						<li class="ad1_c">
+						  <span>
+							安全性
+						  </span>
+						  <br>
+						  均在硬件防火墙下
+						</li>
+					  </ul>
+					  <ul class="ad1_content">
+						<li class="ad1_p">
+						  <img src="{TEMPLETS_SKIN}/images/20121012004.gif">
+						</li>
+						<li class="ad1_c">
+						  <span>
+							速度快
+						  </span>
+						  <br>
+						  均为国内顶级骨干网机
+						</li>
+					  </ul>
+					  <ul class="ad1_content">
+						<li class="ad1_p">
+						  <img src="{TEMPLETS_SKIN}/images/20121012005.gif">
+						</li>
+						<li class="ad1_c">
+						  <span>
+							售后好
+						  </span>
+						  <br>
+						  提供24小时的技术支持
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div>
+					<img src="{TEMPLETS_SKIN}/images/20120925006.gif" width="194px">
+				  </div>
+				  <div class="left_ad4">
+					<ul class="ad4_title">
+					  最新签约客户
+					</ul>
+					<ul class="ad4_con" style=" height:335px; overflow:hidden;">
+						{pc:content action="lists" catid="20" num="20" order="id DESC"}
+						{loop $data $r}
+						<li >
+						<a href="{$r[url]}" target="_blank">{$r[title]}</a>
+						</li>
+						{/loop}
+						{/pc}
+					</ul>
+				  </div>
+				  <script language="javascript" type="text/javascript">
+					$(function() {
+					  var _wrap = $('.ad4_con');
+					  var _interval = 1000;
+					  var _moving;
+					  _wrap.hover(function() {
+						clearInterval(_moving);
+					  },
+					  function() {
+						_moving = setInterval(function() {
+						  var _field = _wrap.find('li:first');
+						  var _h = _field.height();
+						  _field.animate({
+							marginTop: -_h + 'px'
+						  },
+						  600,
+						  function() {
+							_field.css('marginTop', 0).appendTo(_wrap);
+						  })
+						},
+						_interval)
+					  }).trigger('mouseleave');
+					});
+				  </script>
+				</div>
+				<div class="Example_con">
+				  <ul id="tab_menu">
+					<li class="MouseonMenu" onclick="showDiv('tab_div1');this.className='MouseonMenu'">
+					  最近上线案例
+					</li>
+					<li class="Spacing">
+					</li>
+					<li class="MouseoutMenu" onclick="showDiv('tab_div2');this.className='MouseonMenu'">
+					  其它随机案例
+					</li>
+				  </ul>
+				  <div class="tab_div" id="tab_div1">
+					<ul>
+					  <li class="div_top">
+					  </li>
+					  <li class="Shadow">
+					  </li>
+					</ul>
+					<ul id="FCG">
+					{pc:get sql="SELECT A.title,A.url,B.keywords,C.rank,C.pubdate FROM `v9_seo` A LEFT JOIN `v9_keywords` B  
+ON A.sid = B.sid  LEFT JOIN `v9_rank` C ON B.kid = C.kid WHERE C.rank <= 2 
+GROUP BY A.title ORDER BY A.sid DESC" num="5" return="data"}
+					{php $num=1;}
+					{loop $data $r}
+					 {if (($num%4)==1)}
+					 <div class="FG">
+					 {/if}
+						<ul class="S_case">
+						  <li class="S_c">
+							<ul class="c_u">
+							  <li class="C_url">
+								{php echo $r[url]=str_replace('http://','',$r[url])}
+							  </li>
+							  <li>
+								{$r[title]}
+							  </li>
+							</ul>
+							<ul class="C_field">
+							  <li class="kw_name">
+								关键词
+							  </li>
+							  <li class="b_line">
+							  </li>
+							  <li class="kw_ranking">
+								排名
+							  </li>
+							</ul>
+							<ul class="Kw_n">
+							  <li class="Kw_bg">
+								{$r[keywords]}
+							  </li>
+							</ul>
+							<ul class="Kw_r">
+							  <li class="Kw_bg">
+								{if ($r[rank])}
+									{$r[rank]}
+								{else}
+									N/A
+								{/if}
+							  </li>
+							</ul>
+						  </li>
+						  <li class="datetime">
+							Time:
+							{if ($r[pubdate])}
+								{date('Y-m-d',$r[pubdate])}
+							{else}
+								N/A
+							{/if}
+						  </li>
+						</ul>
+						<ul class="spacing">
+						</ul>
+					  {if (($num%4)==0)}
+					  </div>
+					  {/if}
+					  {$num++}
+					  {/loop}
+					  {/pc}
+					</ul>
+				  </div>
+				  <div class="tab_div" id="tab_div2" style="display:none;">
+					<ul>
+					  <li class="div_top">
+					  </li>
+					  <li class="Shadow">
+					  </li>
+					</ul>
+					<ul id="FCG">
+					{pc:get sql="SELECT A.title,A.url,B.keywords,C.rank,C.pubdate FROM `v9_seo` A LEFT JOIN `v9_keywords` B  
+ON A.sid = B.sid  LEFT JOIN `v9_rank` C ON B.kid = C.kid WHERE rank IS NOT NULL
+GROUP BY A.title" num="20" return="data"}
+					{php $num=1;}
+					{loop $data $r}
+					 {if (($num%4)==1)}
+					 <div class="FG">
+					 {/if}
+						<ul class="S_case">
+						  <li class="S_c">
+							<ul class="c_u">
+							  <li class="C_url">
+								{php echo $r[url]=str_replace('http://','',$r[url])}
+							  </li>
+							  <li>
+								{$r[title]}
+							  </li>
+							</ul>
+							<ul class="C_field">
+							  <li class="kw_name">
+								关键词
+							  </li>
+							  <li class="b_line">
+							  </li>
+							  <li class="kw_ranking">
+								排名
+							  </li>
+							</ul>
+							<ul class="Kw_n">
+							  <li class="Kw_bg">
+								{$r[keywords]}
+							  </li>
+							</ul>
+							<ul class="Kw_r">
+							  <li class="Kw_bg">
+								{if ($r[rank])}
+									{$r[rank]}
+								{else}
+									N/A
+								{/if}
+							  </li>
+							</ul>
+						  </li>
+						  <li class="datetime">
+							Time:
+							{if ($r[pubdate])}
+								{date('Y-m-d',$r[pubdate])}
+							{else}
+								N/A
+							{/if}
+						  </li>
+						</ul>
+						<ul class="spacing">
+						</ul>
+					  {if (($num%4)==0)}
+					  </div>
+					  {/if}
+					  {$num++}
+					  {/loop}
+					  {/pc}
+					</ul>
+				  </div>
+				</div>
+{template "content","footer"}

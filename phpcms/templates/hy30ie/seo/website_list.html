@@ -1,0 +1,53 @@
+{template 'member', 'header'}
+<link href="{CSS_PATH}dialog.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}user_extend.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{JS_PATH}dialog.js"></script>
+<script language="javascript" type="text/javascript" src="{JS_PATH}content_addtop.js"></script>
+<div id="memberArea">
+	{template 'seo', 'left'}
+	<div class="col-auto">
+		<div class="col-1 ">
+			<h5 class="title">网站列表</h5>
+			<div class="content">
+				
+			<form method="post" action="" id="myform" name="myform">
+				<table width="100%" cellspacing="0" class="table_form">
+					<tr>
+						<td>网站名称</td>
+						<td>查看关键词</td>
+						<td>关键词数量</td>
+						<td>累计消费</td>
+						<td>创建日期</td>
+						<td class="td_center">当前状态</td>
+						<td class="td_center">操作选项</td>
+					</tr>
+					<!-- {if (count($weblist)>0)} -->
+						<!-- {loop $weblist $k $v} -->
+						<tr>
+							<td><a href="{$v['url']}" target="_blank">{$v['title']}</a></td>
+							<td><a href="/index.php?m=seo&c=index&a=keywords_list&sid={$v['sid']}&t=3" class="search_view"></a></td>
+							<td>{$v['counter']}</td>
+							<td>{format::price($v['fee'])}</td>
+							<td>{format::date($v['adddate'], 1)}</td>
+							<td class="td_center">{format::status($v['status'])}</td>
+							<td class="td_center">
+							<a href="index.php?m=seo&c=index&a=keywords_add&sid={$v['sid']}&t=3">添加关键词</a>&nbsp;|&nbsp;<a href="index.php?m=seo&c=index&a=keywords_list&sid={$v['sid']}&t=3">关键词管理</a>&nbsp;<!--|&nbsp; <a href="index.php?m=seo&c=index&a=website_edit&sid={$v['sid']}&t=3">修改</a>&nbsp;|&nbsp;<a href="index.php?m=seo&c=index&a=website_delete&sid={$v['sid']}" onclick="javascript:if(confirm('删除网站同时会删除站点下\n的所有关键词，确实要删除吗？')){return true;}else{return false;}">删除</a> -->
+							</td>
+						</tr>
+						<!-- {/loop} -->
+					<!-- {else} -->
+						<tr>
+							<td colspan="7" height="60" class="td_center">{L('no_message')}</td>
+						</tr>
+					<!-- {/if} -->
+				</table>
+			</form>
+			</div>
+			
+			<div id="pages">{$pages}</div>
+			<span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+{template 'member', 'footer'}

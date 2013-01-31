@@ -1,0 +1,74 @@
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="{TEMPLETS_SKIN}/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="{$CATEGORYS[19]['url']}">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="{$CATEGORYS[37]['url']}">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="{TEMPLETS_SKIN}/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="{$CATEGORYS[38]['url']}">代理加盟</a></li>
+					<li><a href="{$CATEGORYS[37]['url']}">帮助中心</a></li>
+					<li><a href="{$CATEGORYS[19]['url']}">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="{TEMPLETS_SKIN}/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		{pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+				{loop $data $r}
+					<li class="sp"></li>
+					<li {if $catid==$r[catid] || $top_parentid==$r[catid]} class="cur"{/if}>
+						<span class="NavL"></span>
+						<span class="NavM"><a href="{$r[url]}" hidefocus="true">{$r[catname]}</a></span>
+						<span class="NavR"></span>
+					</li>
+				{/loop}
+				<li class="sp"></li>
+				<li {if $catid==2} class="cur"{/if}>
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="{$CATEGORYS[2]['url']}" hidefocus="true">{$CATEGORYS[2]['catname']}</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        {/pc}
+	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">

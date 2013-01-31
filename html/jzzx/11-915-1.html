@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>服务器安全技术之防火墙技术 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            防火墙技术防火墙作为内网与外网之间的屏障，简化了内网的安全管理，其作用越来越受到网站管理人员的重视，几乎成...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  服务器安全技术之防火墙技术				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							服务器安全技术之防火墙技术						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:52:19 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	<div>	&nbsp;&nbsp;&nbsp;&nbsp;防火墙技术<br />	&nbsp;&nbsp;&nbsp;&nbsp;防火墙作为内网与外网之间的屏障，简化了内网的安全管理，其作用越来越受到网站管理人员的重视，几乎成为网站必备的安全措施，下面分别讲述防火墙的概念、分类和配置方面的知识。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(1)防火墙的概念和功能<br />	&nbsp;&nbsp;&nbsp;&nbsp;防火墙是指在两个网之间的一个组件和系统的集合体，集合体对系统穿透具有很强的抵抗力，使所有内外网之间的通信流都必须通过它，并且只有那些被本地安全策略定义并被授权的通信流才可以通过。<br />	&nbsp;&nbsp;&nbsp;&nbsp;防火墙可以具有以下功能：通过包过滤，可以在其上实现网络安全策略，控制通过它的通信流；通过网络地址转换，可以屏蔽内部网络结构，提高内网的保密性；实现审计和报警机制；其他功能，如虚拟专用网、代理、统计、计费、远程管理和一些特定功能等。<br />	&nbsp;&nbsp;&nbsp;&nbsp;防火墙的特点是能定义安全策略，阻止未被授权的访问等。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(2)分类<br />	&nbsp;&nbsp;&nbsp;&nbsp;随着技术的发展，防火墙技术也在不断发展，到今天，防火墙的分类和功能也在不断细化，但总的来说，可以分为以下三大类：包过滤防火墙、应用级防火墙和正在发展中的监测型防火墙。<br />	&nbsp;&nbsp;&nbsp;&nbsp;①包过滤防火墙。又叫网络级防火墙，因为工作在网络层。一般是通过检查单个包的地址、协议、端口等信息来决定是否允许数据包通过。路由器便是&ldquo;传统&rdquo;的网络级防火墙。网络级防火墙工作依据是网络中的分包传输技术，即网络上的数据被分割成为一定大小的数据包传递，以提高整体的传输效率。在每一个数据包中都会包含报头，报头中包含了一些基本的传输所用的信息，如源地址、目标地址、TCP/UDP源端口和目标端口等。网络级防火墙通过读取这些数据包中的地址信息来判断这些&ldquo;包&rdquo;是否来自可信任的站点，而一旦发现来自于可信任站点之外的数据包，防火墙便会将其过滤掉。<br />	&nbsp;&nbsp;&nbsp;&nbsp;包过滤技术的优点是简单实用，容易理解，而且实现成本较低，实现效率较高。在应用环境比较简单的情况下，能够以较小的代价在一定程度上保证系统的安全性。但是网络级防火墙对网络的保护很有限，因为只检查地址和端口，对网络更高协议层的信息无理解能力，因此攻击者可以利用此弱点对系统进行破坏。<br />	&nbsp;&nbsp;&nbsp;&nbsp;②应用级防火墙。应用级防火墙能够检查进出的数据包，透视应用层协议，与既定的安全策略进行比较。该类型防火墙能够进行更加细化复杂的安全访问控制，并做精细的注册和稽核。根据是否允许两侧通信主机直接建立连接，又可以分为网关和代理两种。网关允许两侧建立直接连接，而是依靠某种算法来识别进出的应用层数据，这些算法通过已知合法数据包的模式来比较进出数据包。而代理要通过特定的代理程序在两侧主机间复制传递数据，不允许建立直接连接。这两种应用都需要相应的代理软件，因而使用时防火墙负载较大，效率不如网络级防火墙。<br />	&nbsp;&nbsp;③监测型防火墙。正在发展中的新一代产品是监测型防火墙，这一技术实际已经开始超越最初的防火墙定义。防火墙的最大缺点就是被动防范，而检测型防火墙不是这样，它能够对各层的数据进行主动的、实时的监测，可以对各层数据进行分析，能够有效地判断高层中的（应用层的）非法侵入。同时，这种检测型防火墙产品一般还带有分布式的探测器，安置在各种应用服务器和其他的网络节点之中，不仅能够检测来自网络外部的攻击，而且对来自内部的恶意破坏也有很强的防范作用。<br />	&nbsp;&nbsp;上面的分类是对防火墙原理而言，现在有些防火墙同时使用上面的几种技术，以提高其安全性。<br />	&nbsp;&nbsp;&nbsp;&nbsp;(3)常用防火墙配置方案<br />	&nbsp;&nbsp;&nbsp;&nbsp;根据网络安全性要求的高低，可以采用不同的配置方案。不同方案之间配置的复杂程度、设备的成本和由此所带来的网络的安全性有极大的差别。下面分别介绍几种经典的配置方案。<br />	&nbsp;&nbsp;&nbsp;&nbsp;①数据包过滤路由器。最普通的互联网防火墙配置方案是在内部网络和互联网之间放置数据包过滤路由器。数据包过滤路由器具有执行网络间转发通信并利用数据包过滤规则，许可或拒绝通信的典型路由选择功能。<br />	&nbsp;&nbsp;这种配置方案具有价格便宜和对用户透明等优点，但也具有明显的不足之处：同下面两种方案相比，它最容易暴露在攻击之下，只要突破一层限制就可咀到达内部网；一旦被入侵者渗透后，内部网上的每个系统都将受到影响。<br />	&nbsp;&nbsp;&nbsp;&nbsp;与这种配置相似的还有一种叫做双穴主机防火墙。双穴主机放在与上面包过滤路由器相同的位置，在主机上放两块网卡，一个连接外网，一个连接内网，两块网卡间不直接通信，而是用一个代理软件相连，可以在代理软件上设置相应的安全策略。<br />	&nbsp;&nbsp;&nbsp;&nbsp;②屏蔽主机防火墙。对这种防火墙系统而言，堡垒主机配置在内部网上，从互联网到堡垒主机的数据包要先经过包过滤路由器的过滤，以便外部系统能够只对堡垒主机进行访问。内部系统可以直接访问互联网，但更多的是要求在堡垒主机上使用代理服务。<br />	&nbsp;&nbsp;&nbsp;&nbsp;显然，这一防火墙系统提供的安全等级比前一个高，由于外部访问先经过包过滤路由器，而且只能直接访问堡垒主机，不能到达内部网，在攻击内部网的安全性之前，入侵者不得不首先渗透两个单独的系统。即使堡垒主机被攻破，对内部网的损害也很小。<br />	&nbsp;&nbsp;但由于堡垒主机在内部网络中，如果攻击者渗透了外部路由器之后，内部网将处于不安全的状态中。<br />	&nbsp;&nbsp;③屏蔽子网防火墙。这种配置方案采用两个路由器：一个外部路由器，一个内部路由器。两个路由器之间形成小型独立的网络，通常称为停火区或非军事区。堡垒主机、信息服务器、调制解调器和公用服务器放置在停火区中。一般而言，互联网上的系统和内部网上的系统能够只访问停火区中有限数量的系统，而不能跨越停火区直接通信传输。<br />	该防火墙系统具有最高的安全性，因为它提供了三道安全防线，对于进来的信息，外部路由器防止典型的外部攻击（源IP地址伪装、源路由选择攻击等）．井管理停火区中网络的互联网访问。它允许外部系统只访问堡垒主机（也可能是信息服务器）。堡垒主机一般都具有相当的抗渗透性，即使堡垒主机被攻破，还有内部路由器提供最后一道防线。<br />	&nbsp;&nbsp;&nbsp;&nbsp;由于外部路由器只将停火区发布到互联网上，所以互联网上的系统没有通向被保护的内部网的路由。这样，网站管理员就可以确保&ldquo;屏蔽&rdquo;内部网，只有停火区上选定的系统才能在互联网上通过路由表和DNS信息交换看到。另一方面，由于内部路由器只将停火区发布到内部网上，所以内部网上的系统没有通向互联网的直接路由，确保T内部用户必须通过驻留在堡垒主机上的代理服务访问互联网。<br />	&nbsp;&nbsp;&nbsp;&nbsp;尽管防火墙在防御外部攻击时被认为是简单高效的，但并不能保证系统的绝对安全，毕竟目前的防火墙还只是被动防范。而且，根据国际计算机安全协会的统计，在所有发生的侵犯事件中，有80%来自防火墙内部，目前，架设在某独立网络与互联网之间的防火墙对来自内网的入侵者还无能为力，所以，防火墙只是维护网络安全的必备措施，不能片面依靠它。实践证明，只有提高网管人员的安全意识和防范水平，才能保证同站安全的可靠性。</div><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-914-1.html">电子商务中的加密技术</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-916-1.html">网站优化明确的分类精确的切割</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('服务器安全技术之防火墙技术')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('服务器安全技术之防火墙技术')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('服务器安全技术之防火墙技术')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('服务器安全技术之防火墙技术')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('服务器安全技术之防火墙技术');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=915&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=915&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

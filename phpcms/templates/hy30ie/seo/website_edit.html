@@ -1,0 +1,114 @@
+{template 'member', 'header'}
+<link href="{CSS_PATH}dialog.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{JS_PATH}dialog.js"></script>
+<script language="javascript" type="text/javascript" src="{JS_PATH}content_addtop.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+	$.formValidator.initConfig({autotip:true,formid:"myform",onerror:function(msg){}});
+	$("#title").formValidator({onshow:"请输入网站名称",onfocus:"网站名称不能为空"}).inputValidator({min:1,max:999,onerror:"网站名称不能为空"});
+	$("#url").formValidator({onshow:"请输入网站地址",onfocus:"网站地址不能为空"}).inputValidator({min:1,max:999,onerror:"网站地址不能为空"}).regexValidator({regexp:"url",datatype:"enum",onerror:"错误的网站URL格式"});
+	$("#ftp_ip").formValidator({onshow:"请输入FTP地址",onfocus:"FTP地址不能为空"}).inputValidator({min:1,max:999,onerror:"FTP地址不能为空"});
+	$("#ftp_user").formValidator({onshow:"请输入FTP账号",onfocus:"FTP账号不能为空"}).inputValidator({min:1,max:999,onerror:"FTP账号不能为空"});
+	$("#ftp_port").formValidator({onshow:"请输入FTP端口",onfocus:"FTP端口不能为空"}).inputValidator({min:1,max:999,onerror:"FTP端口不能为空"});
+	$("#ftp_pwd").formValidator({onshow:"请输入FTP密码",onfocus:"FTP密码不能为空"}).inputValidator({min:1,max:999,onerror:"FTP密码不能为空"});
+	$("#L_3360-1").formValidator({onshow:"请选择行业分类",onfocus:"行业分类不能为空"}).inputValidator({min:1,max:999,onerror:"行业分类不能为空"});
+	$("#L_3360-2").formValidator({onshow:"请选择子行业分类",onfocus:"子行业分类不能为空"}).inputValidator({min:1,max:999,onerror:"子行业分类不能为空"});
+	
+	//回车提交数据
+	$(document).keydown(function(event){
+	  if(event.keyCode ==13){
+		$("#dosubmit").click();
+	  }
+	});
+})
+//-->
+</script>
+<div id="memberArea">
+	{template 'seo', 'left'}
+	<div class="col-auto">
+		<div class="col-1 ">
+			<h5 class="title">修改网站</h5>
+			<div class="content">
+				
+			<form name="myform" action="{APP_PATH}index.php?m=seo&c=index&a=website_edit" method="post" id="myform">
+			<table width="100%" cellspacing="0" class="table_form">
+			  <tr>		
+				<th>站点名称：</th>
+				   <td><input name="info[title]" type="text" disabled="disabled" id="title" size="30" value="{$info['title']}"  class="input-text"/></td>
+				 </tr>
+				 <tr>
+				   <th>站点URL：</th>
+				   <td><input name="info[url]" type="text" id="url" disabled="disabled" size="30" value="{$info['url']}"  class="input-text"/></td>
+				 </tr>
+				 <tr>
+				 	<th>所属行业：</th>
+					<td colspan="2">
+					<div id="L_3360"></div>
+					{menu_linkage(3360,'L_3360',$info['typeson'])}
+					</td>
+				 </tr>
+				 <tr>
+				   <th>FTP 地址：</th>
+				   <td><input name="info[ftp_ip]" type="text" id="ftp_ip" size="30" value="{$info['ftp_ip']}"  class="input-text"/></td>
+				 </tr>
+				 <tr>
+				   <th>FTP 账号：</th>
+				   <td><input name="info[ftp_user]" type="text" id="ftp_user" size="30" value="{$info['ftp_user']}"  class="input-text"/></td>
+				 </tr>
+				 <tr>
+				   <th>FTP 密码：</th>
+				   <td><input name="info[ftp_pwd]" type="password" id="ftp_pwd" size="30" value="{$info['ftp_pwd']}"  class="input-text"/></td>
+				 </tr>
+				 <tr>
+				   <th>FTP 端口：</th>
+				   <td><input name="info[ftp_port]" type="text" id="ftp_port" size="30" value="{$info['ftp_port']}"  class="input-text"/></td>
+				 </tr>
+				  <tr>
+				   <th>优化搜索引擎：</th>
+				   <td>
+				   <?php
+				    $arr_search_type = explode(',',$info['searchtype']);
+					$str = "";
+					foreach($arr_search_type as $k => $v)
+					{					
+						switch($v)
+						{
+							case '1':
+								$str.='<input type="checkbox" name="info[searchtype][]" id="baidu" value="1" checked="checked" disabled="disabled" /> 百度 ';
+								break;
+							case '2':
+								$str.='<input type="checkbox" name="info[searchtype][]" id="soso" value="2" checked="checked" disabled="disabled" /> 搜搜 ';
+								break;
+							case '3':
+								$str.='<input type="checkbox" name="info[searchtype][]" id="sogou" value="3" checked="checked" disabled="disabled" /> 搜狗';
+								break;
+						}
+					}
+					echo $str;
+				   ?>
+				   </td>
+				 </tr>
+				 <tr>
+				   <th>备  注：</th>
+				   <td><textarea name="info[remark]"  id="remark" rows="5" cols="50">{$info['remark']}</textarea></td>
+				 </tr>
+				 <tr>
+				   <td></td>
+				   <td colspan="2"><label>
+					<input type="hidden" name="info[sid]" id="sid" value="<?php echo $_GET['sid'];?>" />
+					 <input type="submit" name="dosubmit" id="dosubmit" value="确 定" class="button"/>
+					 </label></td>
+				 </tr>
+				
+			   </table>
+			   </form>
+			
+			</div>
+			
+			<span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+{template 'member', 'footer'}

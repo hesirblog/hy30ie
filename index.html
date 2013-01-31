@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统"/>
+	<meta name="description" content="重庆圣矢网络科技SEO管理系统"/>
+	<link rel="stylesheet" href="/statics/hy30ie/css/global.css" />
+	<link rel="stylesheet" href="/statics/hy30ie/css/index.css" />
+	<script type="text/javascript" src="/statics/hy30ie/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/statics/hy30ie/js/bxCarousel.js"></script>
+	<script type="text/javascript" src="/statics/hy30ie/js/jcarousellite.js"></script>
+	<script type="text/javascript" src="/statics/hy30ie/js/scroll.js"></script>
+	<script type="text/javascript" src="/statics/hy30ie/js/jqFancyTransitions.1.8.js"></script>
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#MainM21Roll").bxCarousel({
+            display_num: 3,
+            move: 1,
+            auto: true,
+            controls: false,
+            auto_hover: true
+        });
+        var $inp = $("#Text1:text");
+
+        $inp.bind('keydown', function (e) {
+
+            var key = e.which;
+
+            if (key == 13) {
+                window.location.href = '/SEO/searchresult?keyword=' + escape($('#Text1').val())
+            }
+
+        });
+
+        $("#hd").jqFancyTransitions({
+            effect: 'wave', // wave, zipper, curtain
+            width: 981,
+            height: 416,
+            strips: 20, // number of strips
+            delay: 5000, // delay between images in ms
+            stripDelay: 50, // delay beetwen strips in ms
+            titleOpacity: 0.7, // opacity of title
+            titleSpeed: 1000, // speed of title appereance in ms
+            position: 'alternate', // top, bottom, alternate, curtain
+            direction: 'fountainAlternate', // left, right, alternate, random, fountain, fountainAlternate
+            navigation: true, // prev and next navigation buttons
+            links: false, // show images as links
+            data: [
+            { img: "/statics/hy30ie/sliders/20120911015.jpg", links: "", titles: ""},
+            { img: "/statics/hy30ie/sliders/20120911115.gif", links: "", titles: ""},
+            { img: "/statics/hy30ie/sliders/20120911215.gif", links: "", titles: ""}
+            ]
+        });
+    });
+</script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="hd" class="ad" style="background-image: url(/statics/hy30ie/images/20120911015.jpg); width: 981px; height: 416px; position: relative; background-position: left top;">
+				 <div class="price">
+					 <ul class="price_ul1"><a title="SEV是Search Engine Visibility的缩写，中文意思是搜索引擎可见性。" href="http://www.sev.cn/">SEV</a>,新一代搜索引擎营销.</ul>
+					 <ul class="price_ul2">
+						  <li>SEV是Search Engine Visibility的缩写，中文是搜索引擎可见性。</li>
+						  <li id="icon_new"></li>
+					 </ul>
+					 <ul class="price_ul3">
+						 <li id="textinput"><input type="text" value="查询关键词每天价格" onfocus="javascript:if(this.value=='查询关键词每天价格'){this.value='';}" onblur="javascript:if(this.value==''){this.value='查询关键词每天价格'}" id="Text1"></li>
+						 <li id="btn_search">
+							 <input type="button" onmousedown="javascript:window.location.href = '/SEO/searchresult?keyword=' + escape($('#Text1').val())" value="查询价格" id="Button1"></li>
+					 </ul>
+					 <ul class="price_ul4"></ul>
+					 <ul class="price_ul5">
+					 <li style=" height:20px; color:White; font-size:16px; font-weight:bold; line-height:20px; padding-top:20px; margin-left:60px;">高效球磨机</li>
+					 <li>
+						 <ul style=" float:left; display:inline; width:100px; font-size:22px; margin-left:80px; margin-top:11px; color:White;">8.7</ul>
+						 <ul style=" float:left; width:310px; margin-top:18px;">
+							 <li class="otis">￥<span>13.1</span></li>
+							 <li class="otis">￥<span>3.9</span></li>
+							 <li class="otis">￥<span>2.6</span></li>
+							 <li class="otis">￥<span>1.3</span></li>
+						 </ul>
+						 <ul style=" float:left; width:310px; ">
+							 <li class="tis">8.7</li>
+							 <li class="tis">2.6</li>
+							 <li class="tis">1.7</li>
+							 <li class="tis">0.9</li>
+						 </ul>
+					 </li>
+					 </ul>
+					 <ul class="price_ul6">
+						   <li class="tip_icon1"></li>
+						   <li class="tip_icon2"></li>
+						   <li class="tip_text">关键词价格与该词搜索量,商业价值等因素有关。</li>
+						   <li class="tip_icon3"></li>
+					 </ul>
+					 <ul class="price_ul7"></ul>
+				 </div>
+			   </div>
+			   
+			   <div class="ad2">
+				  <div class="indexHot">
+					<a class="hotNews pngFix a" href="#">
+						<h3 class="m_title">双昌企业标准型</h3>
+						<span class="m_info">按天展示扣费90%稳定性<br/>7*24排名监控</span>
+						<span class="m_fee">RMB￥6600/年</span>
+					</a>
+					<a class="netWork pngFix a" href="#">
+						<h3 class="m_title">营销站点建设</h3>
+						<span class="m_info">专家制定，终身升级<br/>7专业型搜索营销站点</span>
+						<span class="m_fee">RMB ￥5000/年</span>
+					</a>
+					<a class="hotpro pngFix a" href="#">
+						<h3 class="m_title">优化业务转入</h3>
+						<span class="m_info">首页SEO转入双昌免开户费<br/>7并享受40%优惠</span>
+						<span class="m_fee">RMB￥600/年</span>
+					</a>
+					<a class="relax pngFix a" href="#">
+						<h3 class="m_title">独立主机</h3>
+						<span class="m_info">SEO网站在优化基础上增加独立IP的<br/>7支持，是网站更具有竞争力！</span>
+						<span class="m_fee">RMB￥300/年</span>
+					</a>
+				  </div>
+				</div>
+				
+				<div id="taocan" class="fixed">
+					<ul class="fixed">
+					  					  					  					  					  <li>
+					  						<a target="_blank" href="http://localhost.hy30ie.com/html/package/12-11-1.html">
+						  <img width="129" height="179" src="http://hy.30ie.com/uploadfile/taocan/taocan1.jpg" title="管家A计划"/>
+						</a>
+						<h3>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/package/12-11-1.html"  looyu_bound="1">
+							管家A计划1、本计划可让企业在网络上的产品信息覆盖率有效提高，并且信息质量及保有量达到70%以上2、并且增强企业网络品牌知名度3、可给企...						  </a>
+						</h3>
+					  </li>
+					  					  					  					  <li>
+					  						<a target="_blank" href="http://localhost.hy30ie.com/html/package/12-12-1.html">
+						  <img width="129" height="179" src="http://hy.30ie.com/uploadfile/taocan/taocan2.jpg" title="管家B计划"/>
+						</a>
+						<h3>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/package/12-12-1.html"  looyu_bound="1">
+							管家B计划1、本计划可让企业在网络上的产品信息覆盖率有效提高，并且信息质量及保有量达到80%以上2、并且增强企业网络品牌知名度3、可给企...						  </a>
+						</h3>
+					  </li>
+					  					  					  					  <li>
+					  						<a target="_blank" href="http://localhost.hy30ie.com/html/package/12-13-1.html">
+						  <img width="129" height="179" src="http://hy.30ie.com/uploadfile/taocan/taocan3.jpg" title="管家C计划"/>
+						</a>
+						<h3>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/package/12-13-1.html"  looyu_bound="1">
+							管家C计划1、本计划可让企业在网络上的产品信息覆盖率有效提高，并且信息质量及保有量达到80%以上2、并且增强企业网络品牌知名度3、可给企...						  </a>
+						</h3>
+					  </li>
+					  					  					  					  <li>
+					  						<a target="_blank" href="http://localhost.hy30ie.com/html/package/12-14-1.html">
+						  <img width="129" height="179" src="http://hy.30ie.com/uploadfile/taocan/taocan4.jpg" title="管家黄金计划"/>
+						</a>
+						<h3>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/package/12-14-1.html"  looyu_bound="1">
+							管家黄金计划-如果您的网站有流量，但是几乎没有订单-所在行业业务关键词比较多，希望能够获得更多潜在客户-想从众多竞争对手中脱颖而出，...						  </a>
+						</h3>
+					  </li>
+					  					  					  					  <li class="fright">
+					  						<a target="_blank" href="http://localhost.hy30ie.com/html/package/12-15-1.html">
+						  <img width="129" height="179" src="http://hy.30ie.com/uploadfile/taocan/taocan5.jpg" title="管家白金计划"/>
+						</a>
+						<h3>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/package/12-15-1.html"  looyu_bound="1">
+							管家白金计划-如果您的网站有流量，也有订单，但是订单远远低于同行-所在行业业务关键词比较多，希望能够获得更多潜在客户-想从众多竞争对...						  </a>
+						</h3>
+					  </li>
+					  					  					  <div class="clr">
+					  </div>
+					</ul>
+				</div>
+				
+				<!-- 经典案例开始 -->
+				<div class="conC">
+				  <div class="conC_L fl">
+					<img width="148" height="60" src="/statics/hy30ie/images/tit_3.jpg">
+				  </div>
+				  <div class="conC_R fr">
+					<a class="prev fl" href="#">
+					</a>
+					<a class="next fr" href="#">
+					</a>
+					<div class="scrollCon fl">
+					  <ul>
+																		<li>
+						  <a target="_blank" href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=show&catid=13&id=27">
+							<img width="138" height="64" border="0" alt="首创国际城" src="http://hy.30ie.com/uploadfile/brands/01.jpg"/>
+						  </a>
+						</li>
+												<li>
+						  <a target="_blank" href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=show&catid=13&id=28">
+							<img width="138" height="64" border="0" alt="艾诺教育" src="http://hy.30ie.com/uploadfile/brands/02.jpg"/>
+						  </a>
+						</li>
+												<li>
+						  <a target="_blank" href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=show&catid=13&id=29">
+							<img width="138" height="64" border="0" alt="丽江留学生客栈" src="http://hy.30ie.com/uploadfile/brands/03.jpg"/>
+						  </a>
+						</li>
+												<li>
+						  <a target="_blank" href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=show&catid=13&id=30">
+							<img width="138" height="64" border="0" alt="西安卓远企业管理咨询有限公司" src="http://hy.30ie.com/uploadfile/brands/04.jpg"/>
+						  </a>
+						</li>
+												<li>
+						  <a target="_blank" href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=show&catid=13&id=31">
+							<img width="138" height="64" border="0" alt="八零文化传播有限公司" src="http://hy.30ie.com/uploadfile/brands/05.jpg"/>
+						  </a>
+						</li>
+																	  </ul>
+					</div>
+					<script type="text/javascript">
+					  $(function() {
+						$(".scrollCon").jCarouselLite({
+						  btnNext: ".next",
+						  btnPrev: ".prev",
+						  speed: 1000,
+						  auto: 800,
+						  visible: 5
+						});
+					  });
+					</script>
+				  </div>
+				</div>
+				<!-- 经典案例结束 -->
+				
+				<!-- 关键词开始 -->
+				<div class="case">
+					<div style=" width:670px; margin-top:10px; float:left;">
+					  <ul class="mqt">
+						<li style=" margin-top:10px; margin-right:10px;">
+						  <img src="/statics/hy30ie/images/Dr.gif">
+						</li>
+						<li style=" font-size:14px; color:#464646; font-weight:bold; margin-top:10px;">
+						  最近上线关键词分享
+						</li>
+						<li style=" margin-top:8px; margin-left:5px;">
+						  <img src="/statics/hy30ie/images/3Start.gif">
+						</li>
+						<li style=" margin-top:10px; display:inline; margin-left:360px;">
+						  <img src="/statics/hy30ie/images/CL.gif">
+						</li>
+						<li style=" margin-top:10px; display:inline; margin-left:10px;">
+						  <img src="/statics/hy30ie/images/CR.gif">
+						</li>
+						<li style=" margin-top:10px; margin-left:10px;">
+						  <a style=" color:#999;" href="#">
+							更多
+						  </a>
+						</li>
+					  </ul>
+					  <div class="bx_wrap">
+						<div class="bx_container" style="position: relative; width: 669px; overflow: hidden;">
+						  <ul id="MainM21Roll" style="width: 999999px; position: relative; left: -223px;">
+																												<li>
+							  <ul class="MainM21Roll1">
+									<img src="/statics/hy30ie/images/temp2.gif" width="60" height="60" />
+							  </ul>
+							  <ul class="MainM21Roll2">
+								成都体能机电							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：重庆生产线							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.cdtnjd.com							  </ul>
+							</li>
+							 							<li>
+							  <ul class="MainM21Roll1">
+									<img src="/statics/hy30ie/images/temp2.gif" width="60" height="60" />
+							  </ul>
+							  <ul class="MainM21Roll2">
+								重科集团							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：重庆起重厂家							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.cqzkfb.com							  </ul>
+							</li>
+							 							<li>
+							  <ul class="MainM21Roll1">
+									<img src="/statics/hy30ie/images/temp2.gif" width="60" height="60" />
+							  </ul>
+							  <ul class="MainM21Roll2">
+								君悦礼品01							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：重庆礼品公司							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.li69.com							  </ul>
+							</li>
+							 							<li>
+							  <ul class="MainM21Roll1">
+									<img src="/statics/hy30ie/images/temp2.gif" width="60" height="60" />
+							  </ul>
+							  <ul class="MainM21Roll2">
+								重庆展门科技							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：重庆不锈钢锥形旗杆							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.zhanmendoor.com							  </ul>
+							</li>
+							 							<li>
+							  <ul class="MainM21Roll1">
+									<img src="/statics/hy30ie/images/temp2.gif" width="60" height="60" />
+							  </ul>
+							  <ul class="MainM21Roll2">
+								重庆运程消防							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：重庆消防设计备案							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.cqyuncheng.com							  </ul>
+							</li>
+							 														</ul>
+						</div>
+					  </div>
+					</div>
+					<div id="book">
+						<h3>《网站运营研究》免费下载</h3>
+						<p>输入您的E-mail订阅博客电子书<br/>将发送到你的邮箱。</p>
+						<div class="getemail">
+						<form action="" name="mailform" id="mailform" onsubmit="return check()">
+						<input type="text" name="email" id="email" onblur="javascript:if(this.value==''){this.value='您的邮件地址'}" onfocus="javascript:if(this.value=='您的邮件地址'){this.value='';}" value="您的邮件地址"/><input type="submit" id="wd_btn" value=""/>
+						</form>
+						<script type="text/javascript">
+						function check()
+						{
+							var mailform = document.getElementById("mailform");
+							var email = mailform["email"];
+							var regu ="^(([0-9a-zA-Z]+)|([0-9a-zA-Z]+[_.0-9a-zA-Z-]*[0-9a-zA-Z]+))@([a-zA-Z0-9-]+[.])+([a-zA-Z]{2}|net|NET|com|COM|gov|GOV|mil|MIL|org|ORG|edu|EDU|int|INT)$";
+							 var re = new RegExp(regu);
+							 if (re.test(email.value)==true)
+							 {
+								return true;
+							 } 
+							 else 
+							 {
+								email.focus();
+								window.alert("请输入有效合法的E-mail地址");
+								return false;
+							 }
+						}
+						</script>
+						</div>
+					</div>
+				</div>
+				<!-- 关键词结束 -->
+				
+				<!-- 新闻列表开始 -->
+				<div class="conB fixed">
+					<div class="conB_L fl">
+						<div class="conB_Lt">
+						  <h2>
+							<img width="168" height="28" src="/statics/hy30ie/images/bg_news_01.jpg">
+						  </h2>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/dynamic/" target="_blank" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<ul>
+																							  <li>
+									<a href="http://localhost.hy30ie.com/html/dynamic/9-4-1.html" target="_blank" looyu_bound="1">
+									  <img width="48" height="44" class="fl" src="http://hy.30ie.com/uploadfile/2012/1124/20121124104054869.jpg"/>
+									</a>
+									<p>
+									  <a href="http://localhost.hy30ie.com/html/dynamic/9-4-1.html" looyu_bound="1" target="_blank" title="山西晋中火锅店爆炸燃烧事故致14人死亡47人受伤" title="山西晋中火锅店爆炸燃烧事故致14人死亡47人受伤">
+										山西晋中火锅店爆炸燃烧事故致14...									  </a>
+									</p>
+									<p class="info">
+										11月23日19时52分，山西省晋中市寿阳县一家名为喜羊羊的火锅店忽然发生爆炸燃烧事故。目前，现场火势已被扑灭，120急救中心也将受伤人员送...									</p>
+								  </li>
+																  <li>
+									<a href="http://localhost.hy30ie.com/html/dynamic/9-3-1.html" target="_blank" looyu_bound="1">
+									  <img width="48" height="44" class="fl" src="http://localhost.hy30ie.com/statics/images/nopic.gif"/>
+									</a>
+									<p>
+									  <a href="http://localhost.hy30ie.com/html/dynamic/9-3-1.html" looyu_bound="1" target="_blank" title="练洪洋：农妇跪访总理乱了谁的“秩序”" title="练洪洋：农妇跪访总理乱了谁的“秩序”">
+										练洪洋：农妇跪访总理乱了谁的&ldquo;...									  </a>
+									</p>
+									<p class="info">
+										在云南彝良地震期间，因跪访视察途中的温家宝总理反映征地问题，涉嫌扰乱公共秩序，11月19日，彝良县发界村村民梁永兰被当地警方行政拘留7...									</p>
+								  </li>
+																  <li>
+									<a href="http://localhost.hy30ie.com/html/dynamic/9-2-1.html" target="_blank" looyu_bound="1">
+									  <img width="48" height="44" class="fl" src="http://hy.30ie.com/uploadfile/2012/1122/20121122061542254.jpg"/>
+									</a>
+									<p>
+									  <a href="http://localhost.hy30ie.com/html/dynamic/9-2-1.html" looyu_bound="1" target="_blank" title="黄奇帆：重庆市政府将于明年元月进行换届" title="黄奇帆：重庆市政府将于明年元月进行换届">
+										黄奇帆：重庆市政府将于明年元月...									  </a>
+									</p>
+									<p class="info">
+										黄奇帆原标题：重庆市政府党组学习贯彻党的十八大精神黄奇帆主持并讲话，要求学深学透十八大精神，推动科学发展、富民兴渝华龙网讯（记者商...									</p>
+								  </li>
+																  <li>
+									<a href="http://localhost.hy30ie.com/html/dynamic/9-1-1.html" target="_blank" looyu_bound="1">
+									  <img width="48" height="44" class="fl" src="http://localhost.hy30ie.com/statics/images/nopic.gif"/>
+									</a>
+									<p>
+									  <a href="http://localhost.hy30ie.com/html/dynamic/9-1-1.html" looyu_bound="1" target="_blank" title="温家宝：我还有几个月就归隐林泉 希望人们把我忘记" title="温家宝：我还有几个月就归隐林泉 希望人们把我忘记">
+										温家宝：我还有几个月就归隐林泉...									  </a>
+									</p>
+									<p class="info">
+										 温家宝20日晚上抵达泰国首都曼谷，展开对泰国正式访问。温家宝离开机场后，直接前往泰国中华总商会与泰国华侨华人代表会面，并发表讲话。...									</p>
+								  </li>
+								  
+							 
+						</ul>
+					</div>
+					<div class="conB_C fl">
+						<div class="conB_Ct">
+						  <h2>
+							<img width="168" height="28" src="/statics/hy30ie/images/bg_news_02.jpg">
+						  </h2>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/view/" target="_blank" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<div class="b_side_mCon" id="marquee">
+						  <ul style="height: 620px;">
+																					<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/view/10-26-1.html" target="_blank" looyu_bound="1" title="大网站烧钱拼竞争 小站长出路在何方">
+								大网站烧钱拼竞争 小站长出...							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/view/10-25-1.html" target="_blank" looyu_bound="1" title="网站维护的基本常识">
+								网站维护的基本常识							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/view/10-24-1.html" target="_blank" looyu_bound="1" title="网络营销做到位 网站维护推广是关键">
+								网络营销做到位 网站维护推...							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-23-1.html" target="_blank" looyu_bound="1" title="解读网站维护相关问题">
+								解读网站维护相关问题							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-22-1.html" target="_blank" looyu_bound="1" title="博客之谈 十般“武艺”">
+								博客之谈 十般“武艺”							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-21-1.html" target="_blank" looyu_bound="1" title="浅谈如何打造一个成功的城市网站">
+								浅谈如何打造一个成功的城市...							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-20-1.html" target="_blank" looyu_bound="1" title="改善网页设计的10个绝佳SEO建议">
+								改善网页设计的10个绝佳SEO建议							  </a>
+							</li>
+																					</ul>
+						</div>
+					</div>
+					<div class="conB_C fl">
+						<div class="conB_Ct">
+						  <h2>
+							<img width="168" height="28" src="/statics/hy30ie/images/bg_news_03.jpg">
+						  </h2>
+						  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/" target="_blank" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<div class="b_side_mCon" id="marquee">
+						  <ul style="height: 620px;">
+																					<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-23-1.html" target="_blank" looyu_bound="1" title="解读网站维护相关问题">
+								解读网站维护相关问题							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-22-1.html" target="_blank" looyu_bound="1" title="博客之谈 十般“武艺”">
+								博客之谈 十般“武艺”							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-21-1.html" target="_blank" looyu_bound="1" title="浅谈如何打造一个成功的城市网站">
+								浅谈如何打造一个成功的城市...							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-20-1.html" target="_blank" looyu_bound="1" title="改善网页设计的10个绝佳SEO建议">
+								改善网页设计的10个绝佳SEO建议							  </a>
+							</li>
+														<li>
+							  <span>
+								2013-01-14							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-16-1.html" target="_blank" looyu_bound="1" title="做地方站运营经验的总结">
+								做地方站运营经验的总结							  </a>
+							</li>
+														<li>
+							  <span>
+								2012-11-24							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-10-1.html" target="_blank" looyu_bound="1" title="李克强：开放包容是亚洲健康与可持续发展客观要求">
+								李克强：开放包容是亚洲健康...							  </a>
+							</li>
+														<li>
+							  <span>
+								2012-11-24							  </span>
+							  <a target="_blank" href="http://localhost.hy30ie.com/html/jzzx/11-9-1.html" target="_blank" looyu_bound="1" title="李克强要求推进西部开发开放">
+								李克强要求推进西部开发开放							  </a>
+							</li>
+																				   </ul>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 新闻列表结束 -->
+				
+				
+<!-- 友情链接开始 -->
+				<div class="flink">
+					<div class="flink_L">
+						<img src="/statics/hy30ie/images/bg_flink.jpg" width="70" height="44" alt="" />
+					</div>
+					<div class="flink_R">
+					<ul>
+																		<li><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></li> 
+												<li><a href="http://www.sdo.com" target="_blank">盛大在线</a></li> 
+																	</ul>
+					</div>
+				</div>
+				<!-- 友情链接结束 -->
+				
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>

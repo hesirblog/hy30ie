@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>网站可扩展性设计的几项设计目标 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            网站可扩展性设计也是硬件结构设计中的重要组成部分，它有以下几项设计目标。①保护现有的设备投资。②尽可能减少...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  网站可扩展性设计的几项设计目标				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							网站可扩展性设计的几项设计目标						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:52:09 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	网站可扩展性设计也是硬件结构设计中的重要组成部分，它有以下几项设计目标。<br />&nbsp;&nbsp;&nbsp;&nbsp;①保护现有的设备投资。<br />&nbsp;&nbsp;&nbsp;&nbsp;②尽可能减少因扩充系统而造成的下同时间。<br />上面提到分布式服务器群结构优于独立服务器，而带lP层次感的服务器网络连接优于平线式连接。分布式服务器群结构和网络的lP层次连接，都是可扩展网站设计的极好出发点。<br />&nbsp;&nbsp;&nbsp;&nbsp;在此基础之上．随着服务器数目的增加，需要注意网络带宽相应增加和网络lP范畴的调整。另外，个别集中式服务器，如防火墙、目录服务器和用户数据库自身的容量也需要扩展。<br />&nbsp;&nbsp;&nbsp;&nbsp;(2)对软件结构设计的要求<br />&nbsp;&nbsp;&nbsp;&nbsp;服务器软件的设计和实施同样对网站的性能，尤其对软件所提供的那些网站应用的性能起着极大的影响。<br />&nbsp;&nbsp;&nbsp;&nbsp;系统软件包括各种操作系统，典型的操作系统有Unix，Linux．Win2000，WinNT，Solaris等，实现不同功能的服务器对安全性、可操作性要求不同，这就需要对操作系统严格选择。同时应注意系统的可维护性需要具有很好的故障检测性工具，当服务器出现任何问题时，可以通过类似Win2000中事件查看器的功能，找到问题的症结，以便解决问题。绝大部分的计算机系统故障源自一两行的程序错误，俗称软件虫，修复时间与再测试时间并不长，重要的是用最短的时间把故障检测出来。<br />&nbsp;&nbsp;应用软件包括服务软件和管理软件，服务软件的设计与选择应注意从需求出发，选择使用质量过关的软件，同时也不要忽视它的可维护性和可操作性。管理软件是用来管理和维护网站的，应能够具有评测和监控的作用，同时要考虑该应用软件所使用的编辑语言，以便于网络管理员的工作。举例来说，解释性语言，如UNIX&nbsp;Shell&nbsp;Script运行起来比较慢，不适合用在有实时要求的软件和经常使用的软件中。Perl是另一种解释性语言，但运行前，它经过Perl特的编译方法，把编译后的程序载入内存，因此运行较快。c/C++写的程序运行最快，但难写且不便调试。所以首先要比较并考虑利弊得失来确定使用哪一种语言；其次要对程序进行优化，避免多余的输入输出操作，提取公共和反复使用的程序行作为子程序。而且可以考虑用c/c++来写上述子程序，以达到最快的运行速度。<br />&nbsp;&nbsp;&nbsp;&nbsp;由于安全管理包括防止非法个人对网站服务器的直接侵害，防止个别人非法盗用他人在本网站的秘密资料等，如果网站的安全漏洞被利用，其危害是难以估量的。所以在选择各类软件时，要注意了解其有无安全漏洞，同时要选择有效的安全管理软件。应该说网站管理没有绝对的安全，只有使网站更安全的管理办法。另一方面，加强网站安全是延续不断的过程，在这一过程中，新的漏洞将会被发现，新的有效的技术措施将台被制定，经验也会一步步地积累。由于种种原因，安全管理软件为网站所管理人员青睐。<br />&nbsp;&nbsp;&nbsp;&nbsp;安全管理软件结构设计可以多种方式实现：1、在网站服务器群结构中，设置前置防火墙。2、为避免暴露服务器群内部的服务器分布架构，可以采用lP网址翻译法(&nbsp;Network&nbsp;Address&nbsp;Translation)或IP遮盖术(IP&nbsp;Masquerade)，使得内部服务器的网址与名字不从网络外泄。即使有人从其他途径弄到以上信息，也无法从外围直接不通过防火墙而进入内部服务器。3、利用各种现有的几种用户使用目录协议(Directory&nbsp;Access&nbsp;Protocol)实施用户控制，实现多层次用户管理。4、从服务器上除掉Mail和Telnet这类容易坡利用而TA系统的应用程序，去掉多余的用户目录，以减少被攻击的可能性。<br />&nbsp;&nbsp;(3)对数据库结构设计的要求<br />&nbsp;&nbsp;在数据库结构设计方面，应着重考虑数据完整性、一致性等要求及数据安全、查询速度、数据整理效率等，一般在数据库结构设计中要注意通过合理限制数据库的操作权限等，来达到一定的数据安全要求。采用面向对象的结构设计，各对象内部数据进行分类，不同类的数据面对不同的应用，可以避免应用时数据混乱；设置数据库录入时自动校验，不合理的数据在录入时禁止进入数据库。<br />&nbsp;&nbsp;&nbsp;&nbsp;采用灵活的数据库接口，方便将数据转换成客户特定的格式。构建一个业务通讯平台，将逻辑统一的企业数据网络化分布。根据面向对象的设计特点，对数据库结构进行优化设计，基于中间件的自动数据采集，严格的业务监控和权限管理，形成企业全球化的统一管理，从业务、设备、网络、运行状态，到客户、员工、经营、监督等等．实现统一界面、统一配置、统一管理、使所有层面都在平台确定的规则条件下有条不紊，各行其是，同时可以保障系统运行效率；另外要建立历史资料库，保障数据资料的完整性，注意发现和使用先进的数据库结构设计方法，解决应用并发问题。<br />&nbsp;&nbsp;&nbsp;&nbsp;要注意利用关系规范化理论做到3NF或4NF设计。关系规范化理论是研究如何将一个不好的关系模式转化为好的关系模式的理论，它是围绕范式而建立的。关系规范化理论认为，一个关系数据库中所有的关系，都应满足一定的规范（约束条件）。它把关系应满足的规范要求分为几级，称为第几范式也称nNF，n为等级的数量，在数据库原理等相关书籍中对关系规范化理论都有具体论述。<br />&nbsp;&nbsp;&nbsp;&nbsp;自顶向下的绘制实体图和自底向上的建立详细数据模型，可以起到相互参照的作用，应该使用相同的设计工具，从而使得在实体分析阶段所确定的属性或所搜集的资料能够被存储起来，供建立详细数据模型的工作使用。自顶向下和自底向上相互协作，相互校验、校正，互相弥补，这样就大大减少传统方法的迭代过程次数从而提高生产率，缩短开发周期，同时保证了设计结果的完整性、准确性和高质量。<br /><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-891-1.html">后台结构设计的要求</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-893-1.html">服务器的分类、选型及操作系统的选择</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('网站可扩展性设计的几项设计目标')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('网站可扩展性设计的几项设计目标')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('网站可扩展性设计的几项设计目标')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('网站可扩展性设计的几项设计目标')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('网站可扩展性设计的几项设计目标');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=892&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=892&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

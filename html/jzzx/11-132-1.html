@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>浅谈服务器安全热点的12项技术 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            随着社会的发展，现在服务器中存储的信息越来越多，而且也越来越重要；为防止服务器发生意外或受到意外攻击，而导...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  浅谈服务器安全热点的12项技术				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							浅谈服务器安全热点的12项技术						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:45:07 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	<p>随着社会的发展，现在服务器中存储的信息越来越多，而且也越来越重要；为防止服务器发生意外或受到意外攻击，而导致大量重要的数据丢失，服务器一般都会采用许多重要的安全保护技术来确保其安全。下面就介绍一些主要的服务器安全热点技术。</p><p>　　1. iSCSI技术</p><p>　　iSCSI 技术是一种新型储存保护技术，该技术是将现有SCSI接口与以太网络(Ethernet)技术结合，使服务器可与使用IP网络的储存装置互相交换资料。该技术不仅价格较目前普遍使用的业界技术标准Fibre Channel 低廉，而且系统管理人员可以用相同的设备来管理所有的网络，并不需要以另外的设备来进行网络的管理。</p><p>　　iSCSI技术是由IBM下属的两大研发机构&mdash;&mdash;加利福尼亚Almaden和以色列Haifa研究中心共同开发的，是一个供硬件设备使用的、可以在IP协议上层运行的SCSI指令集。简单地说， iSCSI可以实现在IP网络上运行SCSI协议，使其能够在诸如高速千兆以太网上进行路由选择。现在，许多网络存储提供商致力于将SAN (Storage Area Network，存储区域网络)中使用的光纤通道设定为一种实用标准，但其架构需要高昂的建设成本，这不是一般的企业所能够承受的；与之相对，NAS技术虽然成本低廉，但是却受到带宽消耗的限制，无法完成大容量存储的应用，而且系统难以满足开放性的要求。iSCSI技术的使用在以上两者之间架设了一道桥梁。iSCSI技术是基于IP协议的技术标准，实现了SCSI和TCP／IP协议的连接，对于以局域网为网络环境的用户，只需要不多的投资，就可以方便、快捷地对信息和数据进行交互式传输和管理。虽然iSCSI基于IP协议，却拥有SAN大容量集中开放式存储的品质。这一技术对于一边要面对信息高速增长，另一边却身处&ldquo;数据孤岛&rdquo;的众多中小企业无疑具有巨大的吸引力。</p><p>　　2. 全自动备份技术</p><p>　　该技术是在网络系统上建立起两套同样的且同步工作的文件服务器，如果其中一套出现故障，另一套将立即自动接入系统，接替发生故障的文件服务器的全部工作。通过使用该技术，可以确保容错系统的数据信息在由于系统或人为误操作造成损坏或丢失后，能及时在本地实现数据快速恢复；另外，该技术还可以确保容错系统在发生不可预料或抵御的地域性灾难（地震、火灾、机器毁坏等）时，及时在本地或异地实现数据及整个系统的灾难恢复。</p><p>　　3. 事务跟踪技术</p><p>　　该技术是针对数据库和多用户软件的需要而设计的，用以保证数据库和多用户应用软件在全部处理工作还没有结束时，或者在工作站或服务器发生突然损坏的情况下，能够保持数据的一致。其工作方式是：对指定的事务（操作）要么一次完成，要么什么操作也不进行。</p><p>　　4. 自动检验技术</p><p>　　一般来说，在对错误的或者被损坏的数据进行恢复之前，系统必须要有能力来及时发现引起这些错误的原因，所以，一个完整的容错系统应该离不开自动检验技术的支持。自动检验技术是用于故障快速检测的一种有效手段，特别是具有完全自校验性质的自校验装置，它不仅能及时检查出系统模块的差错，还能够检测出自身的差错。在设计一个容错系统时，如果正确地使用自动检验技术，可以大大提高系统对差错的反应能力，使差错的潜伏期缩短，有效地阻止错误的进一步蔓延，从而有利于其他技术功能及时对错误做出相关的纠正措施。</p><p>&nbsp;</p><p>　　5. 内存纠错技术</p><p>　　该技术是一种服务器透明检测及故障纠错技术，它在发现并更正一个内存错误的同时，可使坏数据位从RAM上被擦除，从而有效减少无法更正的多位错误的发生。</p><p>　　6. 热定位技术</p><p>　　该技术也是一种检查数据错误的技术，该技术可以对写入磁盘的数据进行一些检查比较工作，从而确定刚刚读入的数据是否正确或者是否有其他方面的问题。在进行检修比较工作时，该技术可以自动从硬盘中把刚写入的数据读出来与内存中的原始数据进行比较。如果出现错误，则利用在硬盘内开设的一个被称为&ldquo;热定位重定区&rdquo; 的区，将硬盘坏区记录下来，并将已确定的坏区中的数据用原始数据写入热定位重定区中。</p><p>　　7. 自动重启技术</p><p>　　自动重启技术是指PC服务器可以在无人管理的情况下完成重新启动过程，以极快的速度恢复系统运行。</p><p>　　8. 网络监控技术</p><p>　　该技术可以让用户在一台普通的客户机上即可监测网络上所有使用的服务器，监控和判断服务器是否&ldquo;健康&rdquo;，一旦服务器的机箱、风扇、内存、处理器、系统信息、温度、电压或第三方硬件中的任何一项出现错误，就会报警提示管理人员。值得一提的是，监测端和服务器端之间的网络可以是局域网，也可以是广域网，直接通过网络对服务器进行启动、关闭或重新置位，极大地方便了管理和维护工作。</p><p>　　9. 故障的在线修复技术</p><p>　　故障的在线修复技术包括故障部件可带电插拔和部件的在线配置技术。可带电插拔的部件有硬盘、内存、外设插卡、电源、风扇等，目前PC服务器中值得骄傲的技术是PCI的热插拔。模块化设计将是今后的发展方向。　</p><p>　　10. 文件分配表和目录表技术</p><p>　　硬盘上的文件分配表和目录表存放着文件在硬盘上的位置和文件大小等信息，如果它们出现故障，数据就会丢失或误存到其他文件中。通过提供两份同样的文件分配表和目录表，把它们存放在不同的位置，一旦某份出现故障，系统将做出提示，从而达到容错的目的。</p><p>　　11. VersaStor技术</p><p>　　该技术是康柏电脑公司在数据存储方面的力作之一，它最大的亮点是首次实现了网络存储池的概念，以消除目前广泛存在于不同存储系统之间的界限，这样就能在不同的存储系统之间进行轻松的存储和管理。另外，存储池的容量还可以根据不同服务器和应用程序动态而透明地缩放，支持不同服务器数据的无缝、透明移植。 VersaStor技术能为任何一个与SAN网络连接的在线存储系统提供存储空间的获取与存放，而无须考虑生产商；而且该技术简化了存储系统的部署，对存储的管理由一般的机械劳动提升到了一个较高的级别。</p><p>　　12. AutoRAID技术</p><p>　　该技术是综合了不同RAID优点的多级RAID阵列技术，它将最近使用的数据放在按RAID 0/1存储的快速高性能的硬盘中，将不太常用的数据放在RAID5存储的经济高效的硬盘中。有了AutoRAID，系统的安装、配置和扩展变得简单而容易，该技术不再需要将数据转移到阵列中的其他硬盘上，只需将新硬盘安装好，AutoRAID就可以自动地判断硬盘大小，并将它加入硬盘阵列中；系统马上就可以利用新硬盘的空间，并将更多的数据按RAID 0/1存储，以提高系统的性能和存取速度。此外，AutoRAID能够管理由不同容量硬盘组成的硬盘阵列。</p><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-131-1.html">浅谈利用博客群养站的小知识</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-133-1.html">IIS服务器下做301永久重定向设置方法</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('浅谈服务器安全热点的12项技术')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('浅谈服务器安全热点的12项技术')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('浅谈服务器安全热点的12项技术')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('浅谈服务器安全热点的12项技术')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('浅谈服务器安全热点的12项技术');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=132&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=132&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

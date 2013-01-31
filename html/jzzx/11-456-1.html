@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>浅析ASP动态网页制作技术 - 建站资讯 - 重庆圣矢网络科技SEO管理系统</title>
+	<meta name="keywords" content="重庆圣矢网络科技SEO管理系统">
+	<meta name="description" content="            　　学好一门编程语言有两个条件是必不可少的，一是理论与实践结合。在实际操作中去验证书本上的理论能更好更快的...">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="/statics/hy30ie/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="/statics/hy30ie/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="/statics/hy30ie/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/statics/hy30ie/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="/statics/hy30ie/images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=public_forget_password&siteid=1">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=register&siteid=1">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="/index.php?m=member&c=index&a=login">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="/statics/hy30ie/images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/agent/">代理加盟</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/help/">帮助中心</a></li>
+					<li><a href="http://localhost.hy30ie.com/html/about/payment/">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="/statics/hy30ie/images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		        	<ul class="naver">
+			    <li style=" margin-right:10px;"></li>
+			    <li class="home">
+				   <span class="NavL"></span>
+				   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+				   </span>
+				   <span class="NavR">
+				   </span>
+			    </li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/seo/" hidefocus="true">搜索引擎优化</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/website/" hidefocus="true">网站建设</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/sevsite/" hidefocus="true">网站建设案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li >
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/index.php?m=content&c=index&a=lists&catid=13" hidefocus="true">SEO案例</a></span>
+						<span class="NavR"></span>
+					</li>
+									<li class="sp"></li>
+					<li  class="cur">
+						<span class="NavL"></span>
+						<span class="NavM"><a href="http://localhost.hy30ie.com/html/news/" hidefocus="true">公司新闻</a></span>
+						<span class="NavR"></span>
+					</li>
+								<li class="sp"></li>
+				<li >
+				  <span class="NavL"></span>
+				  <span class="NavM"><a href="http://localhost.hy30ie.com/html/about/profile/" hidefocus="true">双昌简介</a></span>
+				  <span class="NavR"></span>
+				</li>
+            </ul>
+        	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="#">
+					首页
+				  </a>
+				  &gt; <a href="http://localhost.hy30ie.com/html/news/">公司新闻</a> > <a href="http://localhost.hy30ie.com/html/jzzx/">建站资讯</a> >  浅析ASP动态网页制作技术				</div>
+								<div class="left">
+				  <div class="left_ad1">
+					<ul class="La1_ns">
+					  <li class="La1_top">
+						了解双昌公司
+					  </li>
+					  					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/profile/">
+						  双昌简介						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/history/">
+						  发展历程						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/honour/">
+						  双昌荣誉						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/service/">
+						  服务团队						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/hr/">
+						  招贤纳士						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/contactus/">
+						  联系我们						</a>
+					  </li>
+					  					  <li class="La1_bg1">
+						<a href="http://localhost.hy30ie.com/html/about/payment/">
+						  付款方式						</a>
+					  </li>
+					  					  					</ul>
+				  </div>
+				  <div class="left_ad2">
+					<ul class="yous">
+					  <li class="youstltle">
+						<img src="/statics/hy30ie/images/cdn_14.jpg">
+					  </li>
+					  
+					  <li class="youli">
+						通过专业的甄选准确把握有效营销资源标准度
+					  </li>
+					  <li class="youli">
+						六年技术研究积累大量营销经验
+					  </li>
+					  <li class="youli">
+						降低企业网络推广风险
+					  </li>
+					  <li class="youli">
+						规范科学化的管理加技术人才积累，拥有一支铁的技术团队
+					  </li>
+					  <li class="youli">
+						确保服务的精致性
+					  </li>
+					  <li class="youli2">
+						24小时实时保障的服务机制
+					  </li>
+					</ul>
+				  </div>
+				  <div class="left_ad4">
+				  </div>
+				</div>				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+					<div class="newsdetails_con">
+						<ul>
+						  <li class="newsdetails_title">
+							浅析ASP动态网页制作技术						  </li>
+						  <li class="newsdetails_author">
+							时间：2013-01-30 11:48:22 &nbsp;&nbsp;&nbsp;来源：&nbsp;&nbsp;&nbsp;作者：&nbsp;&nbsp;&nbsp;点击：<span id="hits"></span>
+						  </li>
+						  <li class="nds_con">
+							            	<p>　　学好一门编程语言有两个条件是必不可少的，一是理论与实践结合。在实际操作中去验证书本上的理论能更好更快的加深你对理论的理解；二是学会总结，把学习、运用中的体会记下来，当成一种经验或者教训加以提炼并在日后的应用中加以改进，会在一定程度上提高你对这门编程语言的认识与了解。以下是笔者在学习与运用ASP编程中的两点经验，希望能对大家有所帮助。</p><p>　　ASP页面内VBScript和JScript的交互</p><p>　　ASP具备管理不同语言脚本程序的能力，能够自动调用合适的脚本引擎以解释脚本代码和执行内置函数。ASP开发提供了两种脚本引擎，即VBScript（缺省）和JScript。不过，开发者并没有局限于只能使用这两种语言，只要能够提供合适的ActiveX脚本引擎就能使用任何脚本语言。</p><p>　　脚本语言的选择往往基于许多不同原因：它可能是开发者最为熟悉的语言，可能是对给定工程来说能够提供最多特色支持的，也有可能是最具效率的。不同的要求使得我们在选择脚本语言选择时更加注重不同的因素，同时也使得我们在某些时候面临选定的脚本语言不能直接提供其它语言固有的函数这一问题，或某个脚本已经写成但用的却是另外一种脚本语言。</p><p>　　此时应该怎么办？是否需要用当前所用的脚本语言重写这些脚本？或者说，是否有可能在一种脚本语言中调用其它脚本语言的内置函数？本文要说明的就是在ASP应用中如何让VBScript脚本和JScript脚本交互以最大限度地获得两种脚本语言的特色支持。</p><p>　　一、VBScript和JScript的内置函数</p><p>　　在VBScript和JScript中，有大量的内置函数功能是相同或类似的。然而，在一种脚本语言中内置的函数并非总是在另外一种脚本语言中也有对应的函数。例如，VBScript提供了许多用于操作字符串和格式化数据的函数，这些函数在JScript中并不存在。这些函数包括StrReverse()、Filter()以及FormatCurrency()等。在另一方面，JScript所提供的用于管理数组、字符串编码等的函数在VBScript中也没有定义，如join()、reverse()、pow()、位操作、escape()和unescape()等。</p><p>　　那么，如果在JScript程序中需要一个VBscript函数该怎么办呢?</p><p>　　二、异种脚本的互相调用</p><p>　　如果需要在JScript脚本中调用一个VBScript中内置的函数，则应该写一个VBScript用户定义函数（在这里调用VBScript内置函数），然后在JScript脚本中象调用公用JScript函数一样调用这个用户定义函数。</p><p>　　例如，如果要调用的VBSCript内置函数是FormatCurrency()，则可以声明如下自定义函数：</p><p>　　以下为引用的内容：</p><p>　　接下来在JScript代码中就可以象普通JScript函数一样调用FormatValue()了。用类似的方法也可以实现VBScript代码调用JScript函数。</p><p>　　应用同样的规则，我们可以在任何脚本内调用任何用户定义函数。不过，从JScript脚本内调用一个不带参数的VBScript过程（Sub）时应略加注意，此时在JScript中应该象调用一个不带参数的JScript函数一样调用它，如用foo()调用VBScriptSubfoo过程。</p><p>　　三、数组管理</p><p>　　数组共享问题稍微复杂一点。虽然数组也象其它变量一样可以在不同语言脚本之间共享，但必须注意兼容方面的问题。</p><p>　　VBScript数组在JScript下可以用VBScript的符号引用，即用myArray(2)引用数组元素而不是JScript的数组元素引用符号myArray[2]。此外，还可以使用一个特殊的JScript对象&mdash;&mdash;VBArray对象将VBScript数组转换为JScript数组。下面的代码从VBScript数组myVBArray创建JScript数组myJSArray：</p><p>　　以下为引用的内容：</p><p>　　上述代码首先创建一个临时的VBArray对象，然后使用它的toArray()方法将自己转换为JScript数组。此后就可以象普通JScript数组一样使用myJSArray，如myJSArray[1]。但应当注意的是，toArray()方法将把一个的VBArray转换为一维的JScript数组。</p><p>　　从VBScript中引用JScript数组更为复杂。虽然在VBScript中我们可以直接访问JScript数组相关的方法和属性，但没有直接访问JScript数组的单个元素的方法。也就是说，我们可以在VBScript脚本中读取JScript数组的长度属性，如下所示：</p><p>　　此处的JScriptjoin()方法将数组myJSArray元素转换到一个以逗号为分割符的字符串，VBScriptSplit()函数将字符串转换为VBScript数组。注意这里我们是在VBScript下调用JScript的join方法。依照此例，我们可以通过自定义VBScript函数来模拟JScript的VBArray对象的toArray()方法以实现JScript数组到VBScript数组的转换。</p><p>　　四、数据共享</p><p>　　在某些情形下混合运用VBScript和JScript函数常有用的，但在不同语言脚本之间共享数据也可能很有用。实现这种共享的方法很简单：不管使用的是什么语言，只要是在页面级声明的变量就可以任意引用。</p><p>　　对象的使用方法也相似，可以任意选用合适的语言读取、修改属性或调用对象的方法。当然给定对象的属性和方法是由创建该对象实例的语言所定义的。正如上例VBScript的过程调用，当从JScript中调用一个不带参数的VBScript对象的方法时，其调用方法也遵从JScript的调用规则，反之亦然。</p><p>　　用模板建立动态ASP页</p><p>　　对于模板，我想大家可能都有一些概念，在word中有很多模板，设计好了大概的版面，你只要用你自己的话填充那些占位字符就好了。这里的模板大概也就是这个意思，页面中相对稳定的部分固定下来，其他的部分根不同的情况在输入不同的内容。其实在DreamWeaver中也有模板的功能，不过那个静态的，只能手动填充内容，而这儿讲的是动态的自动的内容填充。</p><p>　　首先，我先来解释一下为什么要用到模板文件。有时候，模板能够带给你对<a href="http://www.30ie.com/netc/">网页制作</a>中功能和布局更为完整的概念。当你看到Word的模板格式之后，就知道最后版面是个什么样子的了，在这儿也是如此。例如，你可以保留ASP语句，而使用不同的模板来建立不同的页面风格。</p><p>　　这样，你就不用为每种不同风格的网页分别来写不同的ASP页面了，这显然可以为我们节省很多时间和精力。而且，模板文件能够让你更容易的浏览页面代码，不用担心ASP和HTML的混杂搞的你头昏脑胀。你可以只用把注意力集中在HTML上，而完全不用去管ASP了。再有就是，摸板很简单，你绝对很快就能搞懂搞定。在这篇文章中，将会用到一个数据库&mdash;&mdash;一个用的很广泛的雇员表。包括雇员ID，姓名，照片，以及工作摘要和照片的注脚。下面是这个Access数据库的结构:</p><p>　　498)this.width=498;onmousewheel=javascript:returnbig(this)border=0alt=Access数据库的结构src=http://www.30ie.com/uploads/allimg/110719/0955113511-0.jpgwidth=296height=340/&gt;</p><p>　　一个很简单的数据库，是吧。当然你可以按要求来扩展它，那就是你自己的事了。我假设你已了解数据库的基本操作，这样我不用在这花太多的笔墨，其实这儿的代码都是很简单的，只要你知道一些基本的东西，就能把它看懂。建立了数据库之后，我们可以开始建立模板文件了。这个文件是每个页面的骨架。我没有用到表格，那样有些麻烦，而我很懒，而且，也不用加入标签，因为那是要加在ASP页面中的。所以到最后，它的样子就是这样了：</p><p>　　498)this.width=498;onmousewheel=javascript:returnbig(this)border=0alt=ASP图二src=http://www.30ie.com/uploads/allimg/110719/0955113024-1.jpgwidth=315height=219/&gt;</p><p>　　就是这样了！这就是一个简单的模板。把它存为template.tmp，在后面的ASP页面中将要引用到它。要注意的是：我们可以在模板中加入各种HTML标签，你完全可以在摸版中定义好网页的结构和样式，就像实际写一个网页一样，只是要把关键的地方标出来&mdash;&mdash;注意到了那些%围着的东西了吗？那就是模板的精髓了。或许你已经注意到，那些%围着的是和数据库中的字段意义对应的。看看下面的ASP代码，是如何读入模板和数据库文件，把他们揉和在一起，然后输出我们想要的HTML页面。</p><p>　　这就是所有的代码了，很简单，不是吗？它所作的只是打开模板文件，按顺序读入每一行，然后用冲数据库中读入的实际的字段值来代替模版中那些%img%，%name%标记。而且，它还把在&ldquo;Duties&rdquo;字段内大段文本中的回车解释成HTML的回车，这样就不至于打乱整个的排版格式了。怎么样？轻松搞定吧。模板在某些应用上真的是可以发挥奇效，省时省力。</p><p>　　理论上，你还可以修改这段代码，用FileSystemObject来读写文本，这样数据就不一定要存储在数据库中了。在一些应用中，比如即时的新闻发布，这样也许更为方便一些。</p><p>　　</p><p>上一篇：<a href="http://www.30ie.com/netc/2011/0718/682.html">网站建设中用户体验的展示形式有哪些</a></p><br>						  </li>
+						  <li class="chapter" style="margin-top:30px;margin-bottom:10px" >
+							<p>
+								<strong>相关热词搜索：</strong>
+															</p>
+						  </li>
+						  <li class="chapter">
+							 <strong>上一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-455-1.html">网站建设中用户体验的展示形式有哪些</a>
+						  </li>
+						  <li class="chapter">
+							<strong>下一篇：</strong><a href="http://localhost.hy30ie.com/html/jzzx/11-457-1.html">浅析搜索引擎优化与搜索引擎竞价广告的区别</a>
+						  </li>
+						  <li>
+														  													  </li>
+						</ul>
+						<div class="Article-Tool">
+						  分享到：
+						  <img src="http://v.t.qq.com/share/images/s/weiboicon16.png" style="padding-bottom:3px;" onclick="postToWb();" class="cu" title="分享到腾讯微博"/>
+						  <script type="text/javascript">
+							function postToWb(){
+								var _t = encodeURI(document.title);
+								var _url = encodeURIComponent(document.location);
+								var _appkey = encodeURI("cba3558104094dbaa4148d8caa436a0b");
+								var _pic = encodeURI('http://www.30ie.com/uploads/allimg/110719/0955113511-0.jpg');
+								var _site = '';
+								var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+								window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+							}
+							</script>
+							<script type="text/javascript">document.write('<a href="http://v.t.sina.com.cn/share/share.php?url='+encodeURIComponent(location.href)+'&appkey=3172366919&title='+encodeURIComponent('浅析ASP动态网页制作技术')+'" title="分享到新浪微博" class="t1" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('浅析ASP动态网页制作技术')+'" title="分享到豆瓣" class="t2" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('浅析ASP动态网页制作技术')+'" title="分享到人人" class="t3" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://www.kaixin001.com/repaste/share.php?rtitle='+encodeURIComponent('浅析ASP动态网页制作技术')+'&rurl='+encodeURIComponent(location.href)+'&rcontent=" title="分享到开心网" class="t4" target="_blank">&nbsp;</a>');</script>
+							  <script type="text/javascript">document.write('<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'" title="分享到QQ空间" class="t5" target="_blank">&nbsp;</a>');
+							</script>
+							<span id='favorite'>
+								<a href="javascript:;" onclick="add_favorite('浅析ASP动态网页制作技术');" class="t6">收藏</a>
+							</span>
+						</div>
+						<script type="text/javascript">
+						<!--
+							function show_ajax(obj) {
+								var keywords = $(obj).text();
+								var offset = $(obj).offset();
+								var jsonitem = '';
+								$.getJSON("http://localhost.hy30ie.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=1&id=456&keywords="+encodeURIComponent(keywords),
+										function(data){
+										var j = 1;
+										var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+										string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+										if(data!=0) {
+										  $.each(data, function(i,item){
+											j = i+1;
+											jsonitem += "<a href='"+item.url+"' target='_blank'>"+j+"、"+item.title+"</a><BR>";
+											
+										  });
+											string += jsonitem;
+										} else {
+											string += '没有找到相关的信息！';
+										}
+											string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";		
+											$(obj).after(string);
+											$('.key-float').mouseover(
+												function (){
+													$(this).siblings().css({"z-index":0})
+													$(this).css({"z-index":1001});
+												}
+											)
+											$(obj).next().css({ "left": +offset.left-100, "top": +offset.top+$(obj).height()+12});
+										});
+							}
+
+							function add_favorite(title) {
+								$.getJSON('http://localhost.hy30ie.com/api.php?op=add_favorite&title='+encodeURIComponent(title)+'&url='+encodeURIComponent(location.href)+'&'+Math.random()+'&callback=?', function(data){
+									if(data.status==1)	{
+										$("#favorite").html('收藏成功');
+									} else {
+										alert('请登录');
+									}
+								});
+							}
+
+						$(function(){
+						  $('#Article .content img').LoadImage(true, 660, 660,'http://localhost.hy30ie.com/statics/images/s_nopic.gif');    
+						})
+						//-->
+						</script>
+						<!-- 点击次数 -->
+						<script language="JavaScript" src="http://localhost.hy30ie.com/api.php?op=count&id=456&modelid=1"></script>
+					</div>
+				</div>
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="/statics/hy30ie/images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="/statics/hy30ie/images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="/statics/hy30ie/images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="/statics/hy30ie/images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="/statics/hy30ie/images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+			<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>				

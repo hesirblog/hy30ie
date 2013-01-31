@@ -1,0 +1,445 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title><?php if(isset($SEO['title']) && !empty($SEO['title'])) { ?><?php echo $SEO['title'];?><?php } ?><?php echo $SEO['site_title'];?></title>
+   <meta name="keywords" content="<?php echo $SEO['keyword'];?>">
+	<meta name="description" content="<?php echo $SEO['description'];?>">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="<?php echo TEMPLETS_SKIN;?>/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo TEMPLETS_SKIN;?>/css/side.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo TEMPLETS_SKIN;?>/css/seo.css" rel="stylesheet" type="text/css" />
+    <script src="<?php echo TEMPLETS_SKIN;?>/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="<?php echo TEMPLETS_SKIN;?>/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+    <script src="<?php echo TEMPLETS_SKIN;?>/js/seo_tab.js" language="javascript" type="text/javascript"></script>
+</head>
+<?php include template("content","header"); ?>
+				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="/">
+					首页
+				  </a>
+				  &gt; <?php echo catpos($catid);?>
+				</div>
+				<?php include template("content","seo_left"); ?>
+				<div class="SEO_main">
+				  <div class="SEO_top">
+					<div class="SEO_top2">
+					  <div class="hot">
+					  </div>
+					  <ul id="SEO_tab">
+						<li onclick="showDiv('SEO_con');this.className='Mouse_on'" class="Mouse_on"
+						id="m1">
+						  关键词价格查询
+						</li>
+						<li onclick="showDiv('SEO_con2');this.className='Mouse_on'" class="Mouse_out"
+						id="m12">
+						  批量查询价格
+						</li>
+						<li class="Mouse_out br0" id="m2">
+						  <a style=" color:Black;" href="#" target="_blank">
+							关键词推荐工具
+						  </a>
+						</li>
+					  </ul>
+					  <div id="SEO_con">
+						<ul class="SEO_desc">
+						  SEV-搜索引擎可见性！
+						</ul>
+						<div class="SEO_check">
+						  <form id="form_SEO_check">
+							<input type="text" onfocus="this.value=''; this.onfocus=null;" class="input_check font_gray"
+							value="请输入您的关键词  如:双昌" id="keyvalue">
+							<div class="suf_check">
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/baidu.gif" style=" position:relative; top:3px; right:3px;">
+							  百度
+							</div>
+							<input type="button" onmousedown="javascript:window.location.href = '/SEO/searchresult?keyword=' + escape($('#keyvalue').val())"
+							class="btn_check">
+						  </form>
+						</div>
+						<div class="SEO_ad">
+						  <ul>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106001.gif">
+						  </ul>
+						  <ul class="SEO_txtlist">
+							<h3>
+							  SEV, 新一代搜索引擎营销.
+							</h3>
+							<li>
+							  关键词按天付费,实惠、放心
+							</li>
+							<li>
+							  PPC+SEO相辅相成,保证营销效果
+							</li>
+							<li>
+							  24小时关键词即时上线！
+							</li>
+						  </ul>
+						  <ul>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106004.gif">
+						  </ul>
+						</div>
+					  </div>
+					  <div style="display: none;" id="SEO_con2">
+						<ul class="con2_tip">
+						  温馨提示：批量查询时每行输入一个关键词后请回车。
+						</ul>
+						<div class="SEO_check2">
+						  <textarea rows="10" cols="10" class="input_area" id="search_3_4"></textarea>
+						  <input type="submit" value="" class="btn_check2" id="search3_9_1">
+						</div>
+						<div class="SEO_ad SEO_ad2">
+						  <ul>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106001.gif">
+						  </ul>
+						  <ul class="SEO_txtlist">
+							<h3>
+							  SEV, 新一代搜索引擎营销.
+							</h3>
+							<li>
+							  关键词按天付费,实惠、放心
+							</li>
+							<li>
+							  PPC+SEO相辅相成,保证营销效果
+							</li>
+							<li>
+							  24小时关键词即时上线！
+							</li>
+						  </ul>
+						  <ul>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106004.gif">
+						  </ul>
+						</div>
+					  </div>
+					  <div style="display: none;" id="SEO_con3">
+						关键词推荐工具
+					  </div>
+					</div>
+				  </div>
+				  <div class="SEO_bottom">
+					<ul id="Menu2" class="DemoUL2">
+					  <li onclick="showDiv2('Demo1');this.className='DemomouseOnMenu2'" class="DemomouseOnMenu2">
+						什么是SEV?
+					  </li>
+					  <li class="Tab_spacing">
+					  </li>
+					  <li onclick="showDiv2('Demo2');this.className='DemomouseOnMenu2'" class="DemomouseOutMenu2">
+						产品原理
+					  </li>
+					  <li class="Tab_spacing">
+					  </li>
+					  <li onclick="showDiv2('Demo3');this.className='DemomouseOnMenu2'" class="DemomouseOutMenu2">
+						产品优势
+					  </li>
+					  <li class="Tab_spacing">
+					  </li>
+					  <li onclick="showDiv2('Demo4');this.className='DemomouseOnMenu2'" class="DemomouseOutMenu2">
+						展现形式
+					  </li>
+					  <li class="Tab_spacing">
+					  </li>
+					  <li onclick="showDiv2('Demo5');this.className='DemomouseOnMenu2'" class="DemomouseOutMenu2">
+						荣誉资质
+					  </li>
+					  <li class="Tab_spacing2">
+					  </li>
+					</ul>
+					<ul class="SEO_Demo">
+					  <div id="Demo1">
+						<ul class="Demo1_t">
+						  <li class="D1_l">
+							<h3>
+							  什么是搜索引擎可见度？
+							</h3>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106005.gif">
+						  </li>
+						  <li>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106006.gif">
+						  </li>
+						</ul>
+						<ul style=" margin-bottom:0" class="D1_c">
+						  <li>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106007.gif">
+						  </li>
+						  <li class="D1_ctxt">
+							搜索引擎能见度指通过SEO(搜索引擎优化)和PPC(搜索竟价)两者相结合相辅相成，使其网站提高搜索引擎可见度，从而提高
+							<br>
+							网站访问量，最终提升网站的销售能力或企业品牌知名度的营销方式。
+						  </li>
+						</ul>
+						<p class="D1_ctxt2">
+						  SEV是一种新的网络营销形式。SEV所做的就是全面而有效的利用搜索引擎来进行网络营销和推广。
+						  <br>
+						  SEV针对性强追求在搜索引擎中获最大的访问量并产生商业价值。
+						</p>
+						<ul class="D1_c">
+						  <h4>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106008.gif">
+						  </h4>
+						  <li>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106011.gif">
+						  </li>
+						  <li class="D1_ctxt">
+							搜索引擎能见度指通过SEO(搜索引擎优化)和PPC(搜索竟价)两者相结合相辅相成，使其网站提高搜索引擎可见度，从而提高
+							<br>
+							网站访问量，最终提升网站的销售能力或企业品牌知名度的营销方式。
+						  </li>
+						</ul>
+						<ul class="D1_c">
+						  <h4>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106009.gif">
+						  </h4>
+						  <li>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106012.gif">
+						  </li>
+						  <li class="D1_ctxt">
+							搜索引擎能见度指通过SEO(搜索引擎优化)和PPC(搜索竟价)两者相结合相辅相成，使其网站提高搜索引擎可见度，从而提高
+							<br>
+							网站访问量，最终提升网站的销售能力或企业品牌知名度的营销方式。
+						  </li>
+						</ul>
+						<ul class="D1_c">
+						  <h4>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106010.gif">
+						  </h4>
+						  <li>
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20121106013.gif">
+						  </li>
+						  <li class="D1_ctxt">
+							搜索引擎能见度指通过SEO(搜索引擎优化)和PPC(搜索竟价)两者相结合相辅相成，使其网站提高搜索引擎可见度，从而提高
+							<br>
+							网站访问量，最终提升网站的销售能力或企业品牌知名度的营销方式。
+						  </li>
+						</ul>
+					  </div>
+					  <div style=" display:none" id="Demo2">
+						<div>
+						  <ul class="D2_c">
+							<li>
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/20121106014.gif">
+							</li>
+							<li class="D2_txt">
+							  <span>
+								购买目标关键词
+							  </span>
+							  <br>
+							  通过SEV通买适合企业营销的主关键词
+							</li>
+							<li class="bh">
+							  1
+							</li>
+						  </ul>
+						  <ul class="D2_shadow">
+						  </ul>
+						</div>
+						<div class="D2_arrow">
+						</div>
+						<div>
+						  <ul class="D2_c">
+							<li>
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/20121106015.gif">
+							</li>
+							<li class="D2_txt">
+							  <span>
+								确认目标关键词
+							  </span>
+							  <br>
+							  双昌在接到工单后将对关键词进行分析及确认与客户沟通
+							</li>
+							<li class="bh">
+							  2
+							</li>
+						  </ul>
+						  <ul class="D2_shadow">
+						  </ul>
+						</div>
+						<div class="D2_arrow">
+						</div>
+						<div>
+						  <ul class="D2_c">
+							<li>
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/20121106007.gif">
+							</li>
+							<li class="D2_txt">
+							  <span>
+								制作优化网站
+							  </span>
+							  <br>
+							  优化工作需90工作日,在此之间双昌将为您投放竟价推广至SEO上线
+							</li>
+							<li class="bh">
+							  3
+							</li>
+						  </ul>
+						  <ul class="D2_shadow">
+						  </ul>
+						</div>
+						<div class="D2_arrow">
+						</div>
+						<div>
+						  <ul class="D2_c">
+							<li>
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/201211060017.gif">
+							</li>
+							<li class="D2_txt">
+							  <span>
+								SEO关键词排名上线
+							  </span>
+							  <br>
+							  当目标关键词左侧上线之后，移除竟价推广至SEO下线
+							</li>
+							<li class="bh">
+							  4
+							</li>
+						  </ul>
+						  <ul class="D2_shadow">
+						  </ul>
+						</div>
+						<div class="D2_arrow">
+						</div>
+						<div>
+						  <ul class="D2_c">
+							<li>
+							  <img src="<?php echo TEMPLETS_SKIN;?>/images/20121106013.gif">
+							</li>
+							<li class="D2_txt">
+							  <span>
+								服务结束
+							  </span>
+							  <br>
+							  为您提供排名监控平台，直至排名结束
+							</li>
+							<li class="bh">
+							  5
+							</li>
+						  </ul>
+						  <ul class="D2_shadow">
+						  </ul>
+						</div>
+					  </div>
+					  <div style=" display:none" id="Demo3">
+						<ul class="cpys cpys2">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_01.gif">
+						  您的营销站点只展示给感兴趣的客户，只会出现在搜索相关产品和服务关键字的潜在客户面前。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_02.gif">
+						  您的营销站点排名位于搜索引擎左侧，让您的推广效果达到极至。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_03.gif">
+						  您的广告按天付费，避免恶意无效点击，只有您的关键词到达搜索引擎结果前2页您才需支付产生的费用关键词不在线无需支付任何费用。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_04.gif">
+						  每天展示都有可能为您带来多个潜在客户，而您支付的费用仅相当竞价的一次点击价格。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_05.gif">
+						  没有关键词按年付费的限制，您只需少量资金便能投放UPai SEM启动营销攻势。您可以自由增加多个关键词，了解账户消费报告，轻松跟踪SEO营销效果。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_06.gif">
+						  可实现多个站点在搜索引擎，占领多个展示位置，提升品牌知名度加大成交率。
+						</ul>
+						<ul class="cpys">
+						  <img src="<?php echo TEMPLETS_SKIN;?>/images/cpys_07.gif">
+						  您的营销站点可覆盖Google/百度/搜搜/搜狗...全球多个搜索引擎，出现在各大搜索引擎，带来更多合作机会。
+						</ul>
+					  </div>
+					  <div style=" display:none" id="Demo4">
+						<ul class="zxxs">
+						  <li class="zx_txt1">
+							用户输入关键词"管道离心泵"
+						  </li>
+						  <li class="zx_txt2">
+							搜索引擎推广位
+						  </li>
+						  <li class="zx_txt3">
+							SEM客户提交的
+							<br>
+							自然排名网页优化结果
+						  </li>
+						</ul>
+					  </div>
+					  <div style=" display:none" id="Demo5">
+						<ul class="Uh_t">
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927008.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：2011年度安徽省搜索引擎营销标杆企业
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927010.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：中国互联网协会会员单位
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927011.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：中国信用录范单位
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927012.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：可信网站示范单位
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927014.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：2012年度创新企业
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927015.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌荣获：百度认证搜索营销服务器机构
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+						<ul class="Uh_con">
+						  <li class="Uh_bg">
+							<img src="<?php echo TEMPLETS_SKIN;?>/images/20120927013.jpg">
+						  </li>
+						  <li class="Uh_des">
+							双昌可信网站验证服务证书
+						  </li>
+						  <li style=" clear:both;">
+						  </li>
+						</ul>
+					  </div>
+					  <div style=" display:none" id="Demo6">
+					  </div>
+					</ul>
+				  </div>
+				</div>
+<?php include template("content","footer"); ?>

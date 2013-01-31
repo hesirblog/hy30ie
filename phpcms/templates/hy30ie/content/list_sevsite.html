@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+	<meta name="keywords" content="{$SEO['keyword']}">
+	<meta name="description" content="{$SEO['description']}">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link href="{TEMPLETS_SKIN}/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="{TEMPLETS_SKIN}/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="{TEMPLETS_SKIN}/js/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
+    <script src="{TEMPLETS_SKIN}/js/jquery-cookie.js" language="javascript" type="text/javascript"></script>
+</head>
+{template "content","header"}
+				<div id="nav_inf">
+				  当前位置：
+				  <a class="nb" href="/">
+					首页
+				  </a>
+				  &gt; {catpos($catid)} 列表
+				</div>
+				{template "content","single_left"}
+				<div class="content">
+				  <div class="Rec_top">
+					<ul class="Rec_t Cbg">
+					</ul>
+					<ul class="Rec_line">
+					</ul>
+				  </div>
+				  <div class="N_con">
+					{pc:content action="lists" catid="$catid" num="3" order="id DESC" page="$page"}
+					{loop $data $r}
+					<dl class="N_sites fixed">
+						<dt><a href="{$r[url]}">
+						{if $parentid==15}
+							<img src="{$r[thumb]}" alt="" width="155" height="155" />
+						{else}
+							<img src="{$r[thumb]}" alt="" width="129" height="179" />
+						{/if}
+						</a></dt>
+						<dd class="dd_title"><a href="{$r[url]}">{$r[title]}</a></dd>
+						<dd class="dd_info">{$r[description]}</dd>
+					</dl>
+					<div class="spline"></div>
+					{/loop}
+					<div id="pages" class="text-c">{$pages}</div>
+					{/pc}
+					</div>
+				 
+				</div>
+{template "content","footer"}
